@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .container {
+    @apply max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-6xl m-auto
+  }
+
+  .theme-color {
+    @apply text-[#45D279]
+  }
+  
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
