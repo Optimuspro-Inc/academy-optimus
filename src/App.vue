@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import Desktop from './components/nav/Desktop.vue'
+import MobileNav from './components/nav/MobileNav.vue'
 </script>
 
 <template>
-  <Desktop />
+  <Desktop class="hidden lg:block" />
+  <MobileNav class="block lg:hidden" />
   <RouterView />
 </template>
 
