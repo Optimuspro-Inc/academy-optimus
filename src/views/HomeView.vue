@@ -210,6 +210,19 @@ const courses = [
         </div>
       </div>
       </div>
-    </section> 
+    </section>
+
+    <section class="bg-white">
+      <div class="container">
+        <div class="bg-[#0A1833] lg:w-[900px] lg:h-[360px] text-center px-5 py-10 lg:p-20 rounded-[10px] my-20 m-auto">
+          <p class="text-[#7EFCFC]">EXPLORE OUR COURSES  </p>
+          <h2 class="oswald text-[20px] font-medium lg:sec-head text-white">Learn An In-Demand Skill And Instantly Turn Your Knowledge Into Profits</h2>
+          <div class="py-5">
+            <input class=" w-[150px] h-[45px] mr-2 lg:w-[242px] rounded-[5px] lg:h-[50px] border-[#E7EBEE] bg-[#FAFAFA] outline-none pl-[10px] lg:pl-[58px] lg:mr-[25px]" placeholder="Email Address" type="text">
+            <input class="w-[100px] h-[45px] bg-[#7EFCFC] lg:w-[130px] lg:h-[50px] rounded-[5px] text-[#0A1833] shadow-lg cursor-pointer" type="submit" value="Get Started">
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
