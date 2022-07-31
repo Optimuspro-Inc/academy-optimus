@@ -48,6 +48,24 @@ const testimonies = [
     text: 'At SOLACE Engineers, we provide engineering solutions and other services on various freelancing platforms. Among them all, Guru is the best and our first choice to invite clients.'
   }
 ]
+
+const courses = [
+  {
+    title: 'Web3 Dapp Programming',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+    img: 'web3.png'
+  },
+  {
+    title: 'Web3 Dapp Programming',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+    img: 'web3.png'
+  },
+  {
+    title: 'Web3 Dapp Programming',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ',
+    img: 'web3.png'
+  }
+]
 </script>
 
 <template>
@@ -156,5 +174,42 @@ const testimonies = [
       </div>
 
     </section>
+
+    <section class="bg-[#0A1833] lg:h-[752px] pb-20 lg:pb-0 mt-20">
+      <img class="absolute" src="/images/Decorator.png" alt="">
+      <div class="container">
+        <div class="text-white text-center pt-20 lg:pt-36 pb-16">
+        <h2 class="sec-head">Explore Our Featured Courses</h2>
+        <p class="inter text-[18px] lg:w-[400px] m-auto">Optimus Pro Academy Has Already Helped Countless of People Around The World. Are You Next?</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div v-for="course in courses" :key="course.title" class="bg-[#fff] rounded-[16px] ">
+          <img class="rounded-t-[10px]" :src="`/images/${course.img}`" alt="">
+          <div class="p-4">
+            <h2 class="oswald text-[20px] font-semibold pt-4 pb-2 text-[#0A1833]">{{ course.title }}</h2>
+            <p class="inter text-[15px]">{{ course.text }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button></button>
+      </div>
+      </div>
+    </section>
+
+    <section class="bg-[#F4F7FF] py-28">
+      <div class="container">
+        <div class="lg:flex justify-between">
+        <img class="w-[500px]" src="/images/certificate.png" alt="">
+        <div class="text-[#0A1833] lg:w-[526px]">
+          <p class="oswald text-[50px] font-semibold">Become Blockchain Certified</p>
+          <p class="inter text-[18px]">Academy Has Already Helped Countless of People Around The World - Are You Next?</p>
+          <button class="bg-[#7EFCFC] w-[160px] h-[50px] mt-5">Start Now</button>
+        </div>
+      </div>
+      </div>
+    </section> 
   </main>
 </template>
