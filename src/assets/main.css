@@ -11,6 +11,10 @@
     @apply max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-6xl m-auto
   }
 
+  .sec-head {
+    @apply oswald font-semibold text-[36px]
+  }
+
   .theme-color {
     @apply text-[#45D279]
   }
