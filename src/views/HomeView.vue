@@ -225,4 +225,28 @@ const courses = [
       </div>
     </section>
   </main>
+  <footer class="mt-20">
+    <div class="bg-[#F4F7FF]">
+      <div class="flex justify-around w-[300px] m-auto py-10">
+        <img class="w-[35px] " src="/images/fb.png" alt="">
+        <a href="https://t.me/optimuspro" target="_blank" rel="noopener noreferrer">
+          <img class="w-[35px] " src="/images/tg.png" alt="">
+        </a>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          <img class="w-[35px] " src="/images/ig.png" alt="">
+        </a>
+        <a href="https://twitter.com/academy_optimus" target="_blank" rel="noopener noreferrer">
+          <img class="w-[35px] " src="/images/tw.png" alt="">
+        </a>
+
+      </div>
+    </div>
+    <div class="bg-[#0A1833]">
+      <div class="container">
+        <div class="py-10">
+        <p class="text-white inter text-[16px] text-center">Copyright © 2022 all rights reserved Optimus Pro</p>
+      </div>
+      </div>
+    </div>
+  </footer>
 </template>
