@@ -33,8 +33,26 @@
             text-black
           "
         >
-          <router-link v-for="link in links" :key="link.link" :to="link.link" @click="closeNav">
-            <div class="link lg:my-0 my-4">{{link.title}}</div>
+          <a @click="state.show = !state.show">
+            <div class="flex link lg:my-0 my-4">Learn <img class="w-[11px] h-[8px] mt-[15px] ml-3" src="/images/Vector.png" alt=""></div>
+          </a>
+          <Transition>
+            <ul v-if="state.show" class=" left-[228px] inter bg-white pl-2 w-[248px]">
+              <li @click="closeNav" class="pt-2">
+                <RouterLink to="/">Courses</RouterLink>
+              </li>
+              <li @click="closeNav" class="pt-2"> <RouterLink to="/">Free Educational Resources</RouterLink> </li>
+              <li @click="closeNav" class="pt-2"> <RouterLink to="/">Blog</RouterLink> </li>
+            </ul>
+          </Transition>
+          <router-link  to="/" @click="closeNav">
+            <div class="link lg:my-0 my-4">Pricing</div>
+          </router-link>
+          <router-link  to="/" @click="closeNav">
+            <div class="link lg:my-0 my-4">Blog</div>
+          </router-link>
+          <router-link  to="/" @click="closeNav">
+            <div class="link lg:my-0 my-4">For Business</div>
           </router-link>
           
         </div>
@@ -91,7 +109,8 @@ const links = [
 ]
 
   const state = reactive({
-    open: false
+    open: false,
+    show: false
   })
 
   const openNav = () => {
