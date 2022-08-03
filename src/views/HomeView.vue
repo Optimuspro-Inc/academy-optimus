@@ -228,17 +228,23 @@ const courses = [
   <footer class="mt-20">
     <div class="bg-[#F4F7FF]">
       <div class="flex justify-around w-[300px] m-auto py-10">
-        <img class="w-[35px] " src="/images/fb.png" alt="">
+        <a href="https://www.facebook.com/OptimusPro/" target="_blank" rel="noopener noreferrer">
+          <img class="w-[35px] " src="/images/fb.png" alt="">
+        </a>
+
         <a href="https://t.me/optimuspro" target="_blank" rel="noopener noreferrer">
           <img class="w-[35px] " src="/images/tg.png" alt="">
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/p/Cgw2_qmDmY3/?igshid=YmMyMTA2M2Y=
+" target="_blank" rel="noopener noreferrer">
           <img class="w-[35px] " src="/images/ig.png" alt="">
         </a>
         <a href="https://twitter.com/academy_optimus" target="_blank" rel="noopener noreferrer">
           <img class="w-[35px] " src="/images/tw.png" alt="">
         </a>
-
+        <a href="https://www.youtube.com/channel/UCdG6TSofIqs0VwrLTNw7z2w" target="_blank" rel="noopener noreferrer">
+          <img class="w-[35px] " src="/images/youtube.png" alt="">
+        </a>
       </div>
     </div>
     <div class="bg-[#0A1833]">
