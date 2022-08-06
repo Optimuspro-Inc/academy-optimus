@@ -1,258 +1,283 @@
 <script setup lang="ts">
-const benefits = [
-  {
-    img: 'payment.png',
-    title: 'Learn any high income digital skills.',
-    text: 'Trading, Blockchain, Mobile App, Digital Art, and online Marketing in a self-paced course designed for your learning style.'
-  },
-  {
-    img: 'gold-medal.png',
-    title: 'Get Certified in an in-demand skill',
-    text: 'Work with top companies anywhere in the world either onsite or from the comfort of your home.'
-  },
-  {
-    img: 'globe.png',
-    title: 'Secure a high paying job or career.',
-    text: 'Work with top companies anywhere in the world either onsite or from the comfort of your home.'
-  },
-  {
-    img: 'processor.png',
-    title: 'Levitate above financial instability.',
-    text: 'Work with top companies anywhere in the world either onsite or from the comfort of your home.'
-  }
-]
-
-const testimonies = [
-  {
-    img: 'image.png',
-    name: 'Cham',
-    title: 'Product designer',
-    text: ' our company, we do ongoing research with our target audience. This includes 30-45 minute phone interviews. It was difficult to conduct the interview, really listen, and ask good follow up questions'
-  },
-  {
-    img: 'image.png',
-    name: 'Scopic Software',
-    title: 'Custom IT Solutions Firm',
-    text: 'We meet new clients and more often than not establish long-term business relationships, all through Guru. The flexibility in how projects can be structured'
-  },
-  {
-    img: 'image.png',
-    name: 'Russell Lee',
-    title: 'Writer',
-    text: 'It is easy to communicate with clients through their message system and their SafePay feature ensures that all funds are secured prior to any work being done.'
-  },
-  {
-    img: 'image.png',
-    name: 'Solace Engineers Inc.',
-    title: 'Solace Engineers Inc.',
-    text: 'At SOLACE Engineers, we provide engineering solutions and other services on various freelancing platforms. Among them all, Guru is the best and our first choice to invite clients.'
-  }
-]
-
-const courses = [
-  {
-    title: 'Web3 Dapp Programming',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-    img: 'web3.png'
-  },
-  {
-    title: 'Web3 Dapp Programming',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
-    img: 'web3.png'
-  },
-  {
-    title: 'Web3 Dapp Programming',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. ',
-    img: 'web3.png'
-  }
-]
 </script>
 
 <template>
   <main>
-    <section class="bg-white lg:mt-10 text-center lg:text-left lg:h-[110vh]">
+    <section class="bg-white lg:mt-10 text-center lg:text-left lg:h-[100vh]">
       <div class="container lg:flex">
-        <div class="pt-10 lg:pt-24 md:pl-10">
-          <h2 class="text-[#162044] font-[700] text-[20px] lg:text-[52px] lg:w-[526px]">
-            Get in-demand skills
-            to grow your career
-            in the web3 industry
+        <div class="pt-10 lg:pt-24">
+          <h2
+            class="
+              text-[#162044]
+              font-black
+              text-[30px]
+              leading-tight
+              lg:text-[50px] lg:w-[526px]
+            "
+          >
+            Get in-demand skills to grow your career in the web3 industry
           </h2>
-          <p class="inter text-[16px] lg:text-[18px] lg:w-[475px] pt-5">
-            Learn from industry experts, get internships, jobs and career opptunities.
+          <p class="inter text-[16px] lg:text-[16px] lg:w-[475px] pt-5">
+            Learn from industry experts, get internships, jobs and career
+            opptunities.
           </p>
-          <p class="inter text-[16px] lg:text-[18px] lg:w-[475px] pt-3">(Pay less for more. Get quality education and training)</p>
+          <p class="inter text-[16px] lg:text-[16px] lg:w-[475px] pt-3">
+            (Pay less for more. Get quality education and training)
+          </p>
 
           <div class="py-5">
-            <input class=" w-[150px] h-[45px] mr-2 lg:w-[242px] rounded-[5px] lg:h-[50px] border-[#E7EBEE] bg-[#FAFAFA] outline-none pl-[10px] lg:pl-[58px] lg:mr-[25px]" placeholder="Email Address" type="text">
-            <input class="w-[100px] h-[45px] bg-[#162044] lg:w-[130px] lg:h-[50px] rounded-[5px] text-white shadow-lg cursor-pointer" type="submit" value="Get Started">
+            <!-- <input
+              class="
+                w-[150px]
+                h-[45px]
+                mr-2
+                lg:w-[242px]
+                rounded-[5px]
+                lg:h-[50px]
+                border-[#E7EBEE]
+                bg-[#FAFAFA]
+                outline-none
+                pl-[10px]
+                lg:pl-[58px] lg:mr-[25px]
+              "
+              placeholder="Email Address"
+              type="text"
+            /> -->
+            <input
+              class="
+                bg-[#162044]
+                rounded-[5px]
+                text-white
+                shadow-lg
+                cursor-pointer
+                px-20
+                p-3
+              "
+              type="submit"
+              value="Create Account"
+            />
           </div>
         </div>
-
 
         <div>
-          <img class="lg:absolute lg:right-0 lg:w-[600px] lg:h-[600px]" src="/images/smile.png" alt="">
+          <img
+            class="lg:absolute lg:right-0 lg:w-[600px] lg:h-[600px]"
+            src="/images/smile.png"
+            alt=""
+          />
         </div>
-
       </div>
     </section>
 
-    <section class="bg-[#0A1833] lg:h-[1102px] pb-20 lg:pb-0 mt-20">
-      <img class="absolute" src="/images/Decorator.png" alt="">
+    <section>
       <div class="container">
-        <div class="text-white text-center pt-20 lg:pt-36 pb-16">
-        <h2 class="sec-head">Great Benefits</h2>
-        <p class="inter text-[18px] lg:w-[400px] m-auto">Start your dream career or secure a highpaying job with optimus pro academy.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-12">
-        <div v-for="benefit in benefits" :key="benefit.title" class="bg-[#7EFCFC] p-10 rounded-[16px] lg:h-[309px]">
-          <img :src="`/images/${benefit.img}`" alt="">
-          <h2 class="oswald text-[30px] font-semibold pt-4 pb-2 text-[#0A1833]">{{ benefit.title }}</h2>
-          <p class="inter text-[18px]">{{ benefit.text }}</p>
+        <div
+          class="
+            heading
+            lg:text-5xl
+            text-3xl
+            lg:my-0
+            my-8
+            font-bold
+            text-center text-[#162044]
+          "
+        >
+          About Optimus Pro Academy
         </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="bg-white py-20 ">
-      <img class="absolute right-0" src="/images/Decorator-white.png" alt="">
-      <div class="container">
-
-        <div class="text-center py-20">
-          <h3 class="text-[#0A1833] inter font-semibold">KICKSTART YOUR EDUCATION</h3>
-          <h2 class="sec-head text-[#162044] lg:w-[600px] m-auto">Thousands Of People Trust Us With Their Education</h2>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-4">
-          <div v-for="testimony in testimonies" :key="testimony.name" class="bg-[#E7EBEE] hover:bg-[#fff] shadow-xl p-10 rounded-[10px] text-[#5F7285] inter lg:h-[273px]">
-            <p class="font-medium"> {{ testimony.text }}</p>
-            <div class="pt-10 flex">
-              <img :src="`/images/${testimony.img}`" alt="">
-              <div class="pl-2">
-                <p class="font-semibold">{{ testimony.name }}</p>
-                <p>{{ testimony.title }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div>
-          <img src="/images/slider nav.png" alt="">
-        </div> -->
-      </div>
-
-    </section>
-
-    <section class="bg-white lg:py-20">
-      <img class="hidden lg:block lg:absolute" src="/images/Decorator-dark.png" alt="">
-      <img class="block lg:hidden absolute" src="/images/Decorator.png" alt="">
-      <div class="container">
-
-        <div class="text-center lg:pt-36">
-          <h3 class="text-[#0A1833] inter font-semibold">OPTIMUM PRO ACADEMY</h3>
-          <h2 class="sec-head text-[#162044] lg:w-[600px] m-auto">Blockchain Professionals Are In High Demand</h2>
-        </div>
-
-        <div class="lg:flex mt-20 inter">
-
-          <div class="lg:w-[1146px]">
-            <img class="lg:w-[332px]" src="/images/linkedin-icon.png" alt="">
-            <p class="text-[20px]">Blockchain has emerged from the once shadowy world of cryptocurrency to become a business solution in search of problems. Which means that you don’t have to be in financial services to be seeking new hires who have background and expertise in putting blockchain to use.</p>
-            <div class="flex mt-9">
-              <img src="/images/read.png" alt="">
-              <p class="pl-5">Read the full article</p>
-            </div>
-          </div>
-
-          <div class="mt-5">
-            <img src="/images/job_demand.jpg" alt="">
-          </div>
-
-        </div>
-        
-      </div>
-
-    </section>
-
-    <section class="bg-[#0A1833] lg:h-[752px] pb-20 lg:pb-0 mt-20">
-      <img class="absolute" src="/images/Decorator.png" alt="">
-      <div class="container">
-        <div class="text-white text-center pt-20 lg:pt-36 pb-16">
-        <h2 class="sec-head">Explore Our Featured Courses</h2>
-        <p class="inter text-[18px] lg:w-[400px] m-auto">Optimus Pro Academy Has Already Helped Countless of People Around The World. Are You Next?</p>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-12">
-        <div v-for="course in courses" :key="course.title" class="bg-[#fff] rounded-[16px] ">
-          <img class="rounded-t-[10px]" :src="`/images/${course.img}`" alt="">
-          <div class="p-4">
-            <h2 class="oswald text-[20px] font-semibold pt-4 pb-2 text-[#0A1833]">{{ course.title }}</h2>
-            <p class="inter text-[15px]">{{ course.text }}</p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <button></button>
-      </div>
-      </div>
-    </section>
-
-    <section class="bg-[#F4F7FF] py-28">
-      <div class="container">
         <div class="lg:flex justify-between">
-        <img class="w-[500px]" src="/images/certificate.png" alt="">
-        <div class="text-[#0A1833] lg:w-[526px]">
-          <p class="oswald text-[50px] font-semibold">Become Blockchain Certified</p>
-          <p class="inter text-[18px]">Academy Has Already Helped Countless of People Around The World - Are You Next?</p>
-          <button class="bg-[#7EFCFC] w-[160px] h-[50px] mt-5">Start Now</button>
+          <div class="lg:text-lg lg:w-1/2 my-auto text-[#0A1833]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+            perspiciatis. Provident tenetur distinctio deserunt cum odit
+            aspernatur velit, quos repellat aperiam sint, suscipit ipsum error
+            commodi facere nam earum perspiciatis.
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+            perspiciatis. Provident tenetur distinctio
+          </div>
+          <div class="lg:w-1/2 lg:p-10 lg:my-0 my-10">
+            <img class="" src="/images/about.png" alt="" />
+          </div>
+        </div>
+        <div class="lg:flex justify-between lg:mx-20">
+          <div
+            class="
+              card
+              lg:mb-0
+              mb-12
+              lg:px-8
+              px-4
+              lg:py-10
+              py-8
+              lg:w-1/2 lg:mr-5
+              rounded-md
+              text-[#0A1833]
+            "
+          >
+            <img src="/images/mission.png" alt="" />
+            <div class="heading text-2xl my-4">MISSION</div>
+            <div class="lg:text-lg">
+              Work with top companies anywhere in the world either onsite or
+              from the comfort of your home.
+            </div>
+          </div>
+          <div
+            class="
+              card
+              lg:px-8
+              px-4
+              lg:py-10
+              py-8
+              lg:w-1/2 lg:ml-5
+              rounded-md
+              text-[#0A1833]
+            "
+          >
+            <img src="/images/vision.png" alt="" />
+            <div class="heading text-2xl my-4">VISION</div>
+            <div class="lg:text-lg">
+              Work with top companies anywhere in the world either onsite or
+              from the comfort of your home.
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+    <section>
+      <div class="mx-3 lg:my-32 my-16">
+        <div
+          class="
+            lg:mx-auto lg:w-3/4
+            bg-[#0A1833]
+            rounded-xl
+            text-center
+            lg:p-16
+            p-8
+          "
+        >
+          <div class="text-[#7EFCFC] lg:text-base text-sm">
+            SUBSCRIBE TO OUR NEWSLETTER
+          </div>
+          <div
+            class="lg:text-5xl text-3xl leading-tight my-6 heading text-white"
+          >
+            GET LATEST NEW AND UPDATES ON WEB3 COURSES AND CONTENT
+          </div>
+          <div class="lg:flex justify-between lg:w-1/2 mx-auto">
+            <input type="text" class="p-3 px-3" placeholder="Email Address" />
+            <button
+              class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="bg-white">
+    <section>
       <div class="container">
-        <div class="bg-[#0A1833] lg:w-[900px] lg:h-[360px] text-center px-5 py-10 lg:p-20 rounded-[10px] my-20 m-auto">
-          <p class="text-[#7EFCFC]">EXPLORE OUR COURSES  </p>
-          <h2 class="oswald text-[20px] font-medium lg:sec-head text-white">Learn An In-Demand Skill And Instantly Turn Your Knowledge Into Profits</h2>
-          <div class="py-5">
-            <input class=" w-[150px] h-[45px] mr-2 lg:w-[242px] rounded-[5px] lg:h-[50px] border-[#E7EBEE] bg-[#FAFAFA] outline-none pl-[10px] lg:pl-[58px] lg:mr-[25px]" placeholder="Email Address" type="text">
-            <input class="w-[100px] h-[45px] bg-[#7EFCFC] lg:w-[130px] lg:h-[50px] rounded-[5px] text-[#0A1833] shadow-lg cursor-pointer" type="submit" value="Get Started">
+        <div
+          class="
+            heading
+            lg:text-6xl
+            font-bold
+            text-3xl
+            text-[#162044] text-center
+            capitalize
+          "
+        >
+          contact us
+        </div>
+        <div class="lg:flex justify-between my-8">
+          <div class="bg-[#FAFAFA] p-4 lg:w-96">
+            <div class="lg:text-2xl text-xl text-[#0A1833] font-bold">Contact</div>
+            <div>M: +234(0)909.199.6571</div>
+            <div>E: sales.ng@optimus.com</div>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="my-3">
+              <input
+                type="text"
+                class="p-3 border border-gray-300 w-full bg-[#FAFAFA]"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="my-3">
+              <input
+                type="text"
+                class="p-3 border border-gray-300 w-full bg-[#FAFAFA]"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="my-3">
+              <textarea
+                class="w-full h-32 border border-gray-300 p-3 bg-[#FAFAFA]"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="mt-6 text-center">
+              <button class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">Send</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="mt-20">
     <div class="bg-[#F4F7FF]">
       <div class="flex justify-around w-[300px] m-auto py-10">
-        <a href="https://www.facebook.com/OptimusPro/" target="_blank" rel="noopener noreferrer">
-          <img class="w-[35px] " src="/images/fb.png" alt="">
+        <a
+          href="https://www.facebook.com/OptimusPro/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-[30px]" src="/images/fb.png" alt="" />
         </a>
 
-        <a href="https://t.me/optimuspro" target="_blank" rel="noopener noreferrer">
-          <img class="w-[35px] " src="/images/tg.png" alt="">
+        <a
+          href="https://t.me/optimuspro"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-[30px]" src="/images/tg.png" alt="" />
         </a>
-        <a href="https://www.instagram.com/p/Cgw2_qmDmY3/?igshid=YmMyMTA2M2Y=
-" target="_blank" rel="noopener noreferrer">
-          <img class="w-[35px] " src="/images/ig.png" alt="">
+        <a
+          href="https://www.instagram.com/p/Cgw2_qmDmY3/?igshid=YmMyMTA2M2Y=
+"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-[30px]" src="/images/ig.png" alt="" />
         </a>
-        <a href="https://twitter.com/academy_optimus" target="_blank" rel="noopener noreferrer">
-          <img class="w-[35px] " src="/images/tw.png" alt="">
+        <a
+          href="https://twitter.com/academy_optimus"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-[30px]" src="/images/tw.png" alt="" />
         </a>
-        <a href="https://www.youtube.com/channel/UCdG6TSofIqs0VwrLTNw7z2w" target="_blank" rel="noopener noreferrer">
-          <img class="w-[35px] " src="/images/youtube.png" alt="">
+        <a
+          href="https://www.youtube.com/channel/UCdG6TSofIqs0VwrLTNw7z2w"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="w-[30px]" src="/images/youtube.png" alt="" />
         </a>
       </div>
     </div>
     <div class="bg-[#0A1833]">
       <div class="container">
         <div class="py-10">
-        <p class="text-white inter text-[16px] text-center">Copyright © 2022 all rights reserved Optimus Pro</p>
-      </div>
+          <p class="text-white inter text-[16px] text-center">
+            Copyright © 2022 all rights reserved Optimus Pro
+          </p>
+        </div>
       </div>
     </div>
   </footer>
 </template>
+<style scoped>
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+</style>

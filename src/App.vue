@@ -1,21 +1,28 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Desktop from './components/nav/Desktop.vue'
-import MobileNav from './components/nav/MobileNav.vue'
+import { RouterLink, RouterView } from "vue-router";
+import Desktop from "./components/nav/Desktop.vue";
+import MobileNav from "./components/nav/MobileNav.vue";
 </script>
 
 <template>
-  <Desktop class="hidden lg:block" />
-  <MobileNav class="block lg:hidden" />
-  <RouterView />
+  <div class="app">
+    <Desktop class="hidden lg:block" />
+    <MobileNav class="block lg:hidden" />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
+.app {
+  font-family: "Inter", sans-serif;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
+.heading {
+  font-family: "Oswald", sans-serif;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
