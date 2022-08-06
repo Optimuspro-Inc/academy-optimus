@@ -1,53 +1,35 @@
 <script setup>
-
 defineProps({
   toggle: Function,
-  modal: Boolean
+  modal: Boolean,
 });
 </script>
 
 <template>
   <main>
-    <section class="bg-white lg:mt-10 text-center lg:text-left lg:h-[100vh]">
-      <div class="container lg:flex">
-        <div class="pt-10 lg:pt-24">
+    <section class="bg-white lg:mt-10 text-center lg:text-left lg:h-[110vh]">
+      <div class="lg:ml-20 mx-8 lg:flex">
+        <div class="pt-10 lg:pt-24 w-1/2">
           <h2
             class="
               text-[#162044]
               font-black
               text-[30px]
               leading-tight
-              lg:text-[50px] lg:w-[526px]
+              lg:text-[55px] lg:mr-8
             "
           >
             Get in-demand skills to grow your career in the web3 industry
           </h2>
-          <p class="inter text-[16px] lg:text-[16px] lg:w-[475px] pt-5">
+          <p class="inter text-[16px] lg:text-[16px] pt-5">
             Learn from industry experts, get internships, jobs and career
             opptunities.
           </p>
-          <p class="inter text-[16px] lg:text-[16px] lg:w-[475px] pt-3">
+          <p class="inter text-[16px] lg:text-[16px] pt-3">
             (Pay less for more. Get quality education and training)
           </p>
 
           <div class="py-5">
-            <!-- <input
-              class="
-                w-[150px]
-                h-[45px]
-                mr-2
-                lg:w-[242px]
-                rounded-[5px]
-                lg:h-[50px]
-                border-[#E7EBEE]
-                bg-[#FAFAFA]
-                outline-none
-                pl-[10px]
-                lg:pl-[58px] lg:mr-[25px]
-              "
-              placeholder="Email Address"
-              type="text"
-            /> -->
             <input
               @click="toggle()"
               class="
@@ -67,7 +49,7 @@ defineProps({
 
         <div>
           <img
-            class="lg:absolute lg:right-0 lg:w-[600px] lg:h-[600px]"
+            class="lg:absolute lg:right-0 w-1/2"
             src="/images/smile.png"
             alt=""
           />
@@ -76,7 +58,7 @@ defineProps({
     </section>
 
     <section id="about">
-      <div class="container">
+      <div class="lg:mx-20 mx-8">
         <div
           class="
             heading
@@ -100,7 +82,7 @@ defineProps({
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
             perspiciatis. Provident tenetur distinctio
           </div>
-          <div class="lg:w-1/2 lg:p-10 lg:my-0 my-10">
+          <div class="lg:w-1/2 lg:my-0 my-10">
             <img class="" src="/images/about.png" alt="" />
           </div>
         </div>
@@ -169,7 +151,7 @@ defineProps({
             GET LATEST NEW AND UPDATES ON WEB3 COURSES AND CONTENT
           </div>
           <div class="lg:flex justify-between lg:w-1/2 mx-auto">
-            <input type="text" class="p-3 px-3" placeholder="Email Address" />
+            <input type="text" class="p-3 px-3 w-2/3" placeholder="Email Address" />
             <button
               class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36"
             >
@@ -180,7 +162,7 @@ defineProps({
       </div>
     </section>
     <section id="contact">
-      <div class="container">
+      <div class="lg:mx-20 mx-8">
         <div
           class="
             heading
@@ -378,7 +360,7 @@ defineProps({
       </div>
     </div>
     <div class="bg-[#0A1833]">
-      <div class="container">
+      <div class="lg:mx-20">
         <div class="py-10">
           <p class="text-white inter text-[16px] text-center">
             Copyright © 2022 all rights reserved Optimus Pro
@@ -392,4 +374,18 @@ defineProps({
 .card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+/* 
+@media (min-width: 1024px) {
+  .hero-img {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .hero-text {
+    width: 450px;
+    padding-top: 0px !important;
+  }
+  .spec{
+    padding-top: 40px !important
+  }
+} */
 </style>

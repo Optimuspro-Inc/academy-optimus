@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white pt-8">
-    <nav class="container">
+    <nav class="lg:mx-20">
       <div class="flex justify-between">
         <div class="flex justify-between">
           <img class="w-[140px]" src="/images/logo.png" alt="" />
