@@ -9,7 +9,7 @@ defineProps({
   <main>
     <section class="bg-white lg:mt-10 text-center lg:text-left lg:h-[110vh]">
       <div class="lg:ml-20 mx-8 lg:flex">
-        <div class="pt-10 lg:pt-24 w-1/2">
+        <div class="pt-10 lg:pt-24 lg:w-1/2">
           <h2
             class="
               text-[#162044]
@@ -49,7 +49,7 @@ defineProps({
 
         <div>
           <img
-            class="lg:absolute lg:right-0 w-1/2"
+            class="lg:absolute lg:right-0 lg:w-1/2"
             src="/images/smile.png"
             alt=""
           />
