@@ -1,4 +1,9 @@
-<script setup lang="ts">
+<script setup>
+
+defineProps({
+  toggle: Function,
+  modal: Boolean
+});
 </script>
 
 <template>
@@ -44,6 +49,7 @@
               type="text"
             /> -->
             <input
+              @click="toggle()"
               class="
                 bg-[#162044]
                 rounded-[5px]
@@ -180,8 +186,7 @@
             heading
             lg:text-6xl
             font-bold
-            text-3xl
-            text-[#162044] text-center
+            text-3xl text-[#162044] text-center
             capitalize
           "
         >
@@ -189,7 +194,9 @@
         </div>
         <div class="lg:flex justify-between my-8">
           <div class="bg-[#FAFAFA] p-4 lg:w-96">
-            <div class="lg:text-2xl text-xl text-[#0A1833] font-bold">Contact</div>
+            <div class="lg:text-2xl text-xl text-[#0A1833] font-bold">
+              Contact
+            </div>
             <div>M: +234(0)909.199.6571</div>
             <div>E: sales.ng@optimus.com</div>
           </div>
@@ -221,6 +228,111 @@
         </div>
       </div>
     </section>
+
+    <!-- Main modal -->
+    <div
+      v-if="modal"
+      class="h-full w-full bg-black fixed top-0 opacity-50"
+    ></div>
+    <div
+      v-if="modal"
+      id="defaultModal"
+      tabindex="-1"
+      class="
+        overflow-y-auto overflow-x-hidden
+        fixed
+        top-0
+        right-0
+        left-0
+        z-50
+        w-full
+        md:inset-0 md:h-full
+        justify-center
+        items-center
+        flex
+      "
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+        <!-- Modal content -->
+        <div
+          class="relative bg-white rounded-lg shadow h-[420px] dark:bg-gray-700"
+        >
+          <!-- Modal header -->
+          <div class="flex justify-between items-start p-4 rounded-t">
+            <button
+              @click="modal = false"
+              type="button"
+              class="
+                text-gray-400
+                bg-transparent
+                hover:bg-gray-200 hover:text-gray-900
+                rounded-lg
+                text-sm
+                p-1.5
+                ml-auto
+                inline-flex
+                items-center
+                dark:hover:bg-gray-600 dark:hover:text-white
+              "
+              data-modal-toggle="defaultModal"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <!-- <span class="sr-only">Close modal</span> -->
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-6 space-y-6">
+            <div class="text-3xl text-center heading text-[#162044]">
+              CREATE ACCOUNT
+            </div>
+            <div class="my-3 lg:w-2/3 mx-auto relative">
+              <img
+                src="/images/bxs_user.png"
+                class="absolute top-3 left-4"
+                alt=""
+              />
+              <input
+                type="text"
+                class="p-3 border border-gray-200 w-full pl-12"
+                placeholder="Username"
+              />
+            </div>
+            <div class="my-3 lg:w-2/3 mx-auto relative">
+              <img
+                src="/images/eva_email-fill.png"
+                class="absolute top-3 left-4"
+                alt=""
+              />
+              <input
+                type="text"
+                class="p-3 border border-gray-200 w-full pl-12"
+                placeholder="Email Address"
+              />
+            </div>
+
+            <div class="my-8 text-center">
+              <button class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="mt-20">

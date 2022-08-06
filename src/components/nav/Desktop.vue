@@ -33,6 +33,7 @@
           </ul>
           <!-- <button class="text-[#162044] border-[#162044] border-[1px] border-solid w-[140px] h-[45px] rounded-[53px]">Login</button> -->
           <button
+            @click="toggle"
             class="
               text-white
               border-[#162044] border-[1px] border-solid
@@ -46,9 +47,9 @@
           </button>
         </div>
       </div>
-      <Transition>
+      <!-- <Transition>
         <ul
-          v-if="show"
+          v-if="state.show"
           class="
             absolute
             left-[228px]
@@ -68,22 +69,21 @@
           </li>
           <li class="pt-2"><RouterLink to="/">Blog</RouterLink></li>
         </ul>
-      </Transition>
+      </Transition> -->
     </nav>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { RouterLink } from "vue-router";
+import { reactive } from "vue";
+const state = reactive({
+  show: false,
+});
 
-export default {
-  name: "Navbar",
-  data() {
-    return {
-      show: false,
-    };
-  },
-};
+defineProps({
+  toggle: Function,
+});
 </script>
 
 <style scoped>

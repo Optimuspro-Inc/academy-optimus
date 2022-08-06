@@ -52,6 +52,7 @@
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
           </a>
           <button
+            @click="closeNav(), toggle()"
             class="
               text-white
               border-[#162044] border-[1px] border-solid
@@ -97,6 +98,10 @@
 </template>
 
 <script setup  lang="ts">
+defineProps({
+  toggle: Function,
+});
+
 import { reactive } from "vue";
 // import links from '../static';
 const links = [
@@ -117,6 +122,8 @@ const links = [
     link: "/",
   },
 ];
+
+
 
 const state = reactive({
   open: false,
