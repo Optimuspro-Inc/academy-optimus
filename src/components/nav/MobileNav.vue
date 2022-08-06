@@ -6,14 +6,14 @@
         <img class="w-24 lg:w-32" src="/images/logo.png" alt="" />
       </router-link>
       <div @click="openNav" class="flex burger lg:mt-0">
-          <img class="w-6 lg:w-32" src="/images/bar-black.svg" alt="" />
+        <img class="w-6 lg:w-32" src="/images/bar-black.svg" alt="" />
       </div>
     </div>
-    <div id="mySidenav" :class="[!state.open ? 'sidenav' : 'sidenavOpen']" >
+    <div id="mySidenav" :class="[!state.open ? 'sidenav' : 'sidenavOpen']">
       <div class="lg:mx-20 mx-8 flex justify-between">
         <router-link to="/">
           <!-- <img class="w-24 lg:w-32" src="../static/logo-black.png" alt="" /> -->
-          <img class="w-[93px]" src="/images/logo.png" alt="">
+          <img class="w-[93px]" src="/images/logo.png" alt="" />
         </router-link>
         <a
           href="javascript:void(0)"
@@ -24,19 +24,19 @@
       </div>
       <div class="lg:mx-20 mx-8 mt-10">
         <div
-          class="
-            normal-case
-            lg:text-8xl
-            text-2xl
-            lg:flex
-            font-inter
-            text-black
-          "
+          class="normal-case lg:text-8xl text-2xl lg:flex font-inter text-black"
         >
-          <a @click="state.show = !state.show">
-            <div class="flex link lg:my-0 my-4">Learn <img class="w-[11px] h-[8px] mt-[15px] ml-3" src="/images/Vector.png" alt=""></div>
-          </a>
-          <Transition>
+          <!-- <a @click="state.show = !state.show">
+            <div class="flex link lg:my-0 my-4">
+              Learn
+              <img
+                class="w-[11px] h-[8px] mt-[15px] ml-3"
+                src="/images/Vector.png"
+                alt=""
+              />
+            </div>
+          </a> -->
+          <!-- <Transition>
             <ul v-if="state.show" class=" left-[228px] inter bg-white pl-2 w-[248px]">
               <li @click="closeNav" class="pt-2">
                 <RouterLink to="/">Courses</RouterLink>
@@ -44,19 +44,30 @@
               <li @click="closeNav" class="pt-2"> <RouterLink to="/">Free Educational Resources</RouterLink> </li>
               <li @click="closeNav" class="pt-2"> <RouterLink to="/">Blog</RouterLink> </li>
             </ul>
-          </Transition>
-          <router-link  to="/" @click="closeNav">
-            <div class="link lg:my-0 my-4">Pricing</div>
-          </router-link>
-          <router-link  to="/" @click="closeNav">
-            <div class="link lg:my-0 my-4">Blog</div>
-          </router-link>
-          <router-link  to="/" @click="closeNav">
+          </Transition> -->
+          <a href="#about">
+            <div @click="closeNav" class="link lg:my-0 my-4">About</div>
+          </a>
+          <a href="#contact">
+            <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
+          </a>
+          <button
+            class="
+              text-white
+              border-[#162044] border-[1px] border-solid
+              h-[45px]
+              rounded-[53px]
+              px-10
+              my-3
+              bg-[#162044]
+            "
+          >
+            Creeate Account
+          </button>
+          <!-- <router-link  to="/" @click="closeNav">
             <div class="link lg:my-0 my-4">For Business</div>
-          </router-link>
-          
+          </router-link> -->
         </div>
-        
       </div>
       <!-- <div class="line bg-black w-screen lg:mt-40"></div> -->
       <div class="lg:mx-20 mx-8 mt-20">
@@ -86,45 +97,43 @@
 </template>
 
 <script setup  lang="ts">
-import { reactive } from 'vue'
+import { reactive } from "vue";
 // import links from '../static';
 const links = [
   {
-    title: 'Learn',
-    link: '/'
+    title: "Learn",
+    link: "/",
   },
   {
-    title: 'Pricing',
-    link: '/'
+    title: "Pricing",
+    link: "/",
   },
   {
-    title: 'Blog',
-    link: '/'
+    title: "Blog",
+    link: "/",
   },
   {
-    title: '  For Business ',
-    link: '/'
+    title: "  For Business ",
+    link: "/",
   },
-  
-]
+];
 
-  const state = reactive({
-    open: false,
-    show: false
-  })
+const state = reactive({
+  open: false,
+  show: false,
+});
 
-  const openNav = () => {
-    state.open = true
-  }
+const openNav = () => {
+  state.open = true;
+};
 
-  const closeNav = () => {
-    state.open = false
-    console.log('Fired')
-  }
+const closeNav = () => {
+  state.open = false;
+  console.log("Fired");
+};
 </script>
 
 <style scoped>
-
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */

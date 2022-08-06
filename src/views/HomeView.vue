@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="about">
       <div class="container">
         <div
           class="
@@ -173,7 +173,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="contact">
       <div class="container">
         <div
           class="
