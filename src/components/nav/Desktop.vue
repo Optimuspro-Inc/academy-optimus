@@ -25,10 +25,10 @@
         <div class="flex justify-between">
           <ul class="flex p-3 mr-6">
             <li class="inter text-sm pl-8">
-              <RouterLink to="/">About</RouterLink>
+              <a href="#about">About</a>
             </li>
             <li class="inter text-sm pl-8">
-              <RouterLink to="/">Contact</RouterLink>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <!-- <button class="text-[#162044] border-[#162044] border-[1px] border-solid w-[140px] h-[45px] rounded-[53px]">Login</button> -->
