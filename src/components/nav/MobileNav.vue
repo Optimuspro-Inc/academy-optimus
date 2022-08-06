@@ -34,7 +34,7 @@
           "
         >
           <a @click="state.show = !state.show">
-            <div class="flex link lg:my-0 my-4">Learn <img class="w-[11px] h-[8px] mt-[15px] ml-3" src="/images/Vector.png" alt=""></div>
+            <div class="flex link lg:my-0 my-4">Learn</div>
           </a>
           <Transition>
             <ul v-if="state.show" class=" left-[228px] inter bg-white pl-2 w-[248px]">
