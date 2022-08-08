@@ -1,8 +1,25 @@
 <script setup>
+import { reactive } from 'vue'
+import *as  axios from 'axios'
+
+
 defineProps({
   toggle: Function,
   modal: Boolean,
 });
+
+
+
+const state = reactive({
+  username: '',
+  email: ''
+})
+
+const createAcc = async () => {
+  console.log(state.username, state.email)
+
+  const { data } = axios.post()
+}
 </script>
 
 <template>
@@ -239,7 +256,7 @@ defineProps({
       <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
         <!-- Modal content -->
         <div
-          class="relative bg-white rounded-lg shadow h-[420px] dark:bg-gray-700"
+          class="relative bg-white rounded-lg shadow h-[420px]"
         >
           <!-- Modal header -->
           <div class="flex justify-between items-start p-4 rounded-t">
@@ -288,6 +305,7 @@ defineProps({
                 alt=""
               />
               <input
+                v-model="state.username"
                 type="text"
                 class="p-3 border border-gray-200 w-full pl-12"
                 placeholder="Username"
@@ -300,6 +318,7 @@ defineProps({
                 alt=""
               />
               <input
+                v-model="state.email"
                 type="text"
                 class="p-3 border border-gray-200 w-full pl-12"
                 placeholder="Email Address"
@@ -307,7 +326,7 @@ defineProps({
             </div>
 
             <div class="my-8 text-center">
-              <button class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">
+              <button @click="createAcc" class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">
                 Get Started
               </button>
             </div>
