@@ -1,13 +1,7 @@
-<script setup>
-import { reactive } from 'vue'
-import *as  axios from 'axios'
-
-
-defineProps({
-  toggle: Function,
-  modal: Boolean,
-});
-
+<script setup lang="ts">
+import { useQuery } from '@vue/apollo-composable'
+import gql from 'graphql-tag';
+import { reactive, watch } from 'vue'
 
 
 const state = reactive({
@@ -15,10 +9,24 @@ const state = reactive({
   email: ''
 })
 
+defineProps({
+  toggle: Function,
+  modal: Boolean,
+});
+
 const createAcc = async () => {
   console.log(state.username, state.email)
+  const { result } = useQuery(gql`
+    query users {
+      users {
+        _id
+        username
+        email
+      }
+    }
+  `)
+  console.log(result)
 
-  const { data } = axios.post()
 }
 </script>
 
@@ -91,13 +99,11 @@ const createAcc = async () => {
         </div>
         <div class="lg:flex justify-between">
           <div class="lg:text-lg lg:w-1/2 my-auto text-[#0A1833]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            perspiciatis. Provident tenetur distinctio deserunt cum odit
-            aspernatur velit, quos repellat aperiam sint, suscipit ipsum error
-            commodi facere nam earum perspiciatis.
+            Optimus Pro Academy is your first-rate edu-platform for all blockchain and Web3 learning resources. 
+            Founded to bridge the talent gap for Africans within the blockchain ecosystem, 
+
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-            perspiciatis. Provident tenetur distinctio
+            the academy is charged with upskilling Africans with knowledge and in-demand expertise in blockchain and Web3 to enable them build, manage and promote innovative ideas to excel in the highly competitive and constantly evolving blockchain landscape.
           </div>
           <div class="lg:w-1/2 lg:my-0 my-10">
             <img class="" src="/images/about.png" alt="" />
@@ -121,8 +127,7 @@ const createAcc = async () => {
             <img src="/images/mission.png" alt="" />
             <div class="heading text-2xl my-4">MISSION</div>
             <div class="lg:text-lg">
-              Work with top companies anywhere in the world either onsite or
-              from the comfort of your home.
+              To empower 45M+ Africans with high-level professional skills in various blockchain and Web3 careers through tailored self-paced courses best suited for scholar’s need. Continuous mentorship program by industry experts for accountability and provision of certificates upon course completion for proof of industry expertise.
             </div>
           </div>
           <div
@@ -140,8 +145,7 @@ const createAcc = async () => {
             <img src="/images/vision.png" alt="" />
             <div class="heading text-2xl my-4">VISION</div>
             <div class="lg:text-lg">
-              Work with top companies anywhere in the world either onsite or
-              from the comfort of your home.
+              To highlight Africa’s relevance in blockchain revolution, bridging the continent to the global financial system and encouraging growth, economic and regional development through youth education.
             </div>
           </div>
         </div>
@@ -163,7 +167,7 @@ const createAcc = async () => {
             SUBSCRIBE TO OUR NEWSLETTER
           </div>
           <div
-            class="lg:text-5xl text-3xl leading-tight my-6 heading text-white"
+            class="lg:text-4xl text-3xl leading-tight my-6 heading text-white"
           >
             GET LATEST NEW AND UPDATES ON WEB3 COURSES AND CONTENT
           </div>
