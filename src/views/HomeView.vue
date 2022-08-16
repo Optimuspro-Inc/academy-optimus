@@ -2,6 +2,7 @@
 import { useQuery } from '@vue/apollo-composable'
 import gql from 'graphql-tag';
 import { reactive, watch } from 'vue'
+import axios from 'axios'
 
 
 const state = reactive({
@@ -16,17 +17,19 @@ defineProps({
 
 const createAcc = async () => {
   console.log(state.username, state.email)
-  const { result } = useQuery(gql`
-    query users {
-      users {
-        _id
-        username
-        email
+  const { data } = await axios({
+			url: 'https://optimus-pro-mini.herokuapp.com/graphql',
+			method: 'POST',
+			data: {
+				query: ``
+        }
+      })
+      if (data.errors) {
+        const errorObj = data.errors[0]
+        return
       }
-    }
-  `)
-  console.log(result)
-
+      if (!data.errors) {
+      }
 }
 </script>
 

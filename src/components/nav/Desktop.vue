@@ -43,7 +43,7 @@
               bg-[#162044]
             "
           >
-            Creeate Account
+            Create Account
           </button>
         </div>
       </div>
