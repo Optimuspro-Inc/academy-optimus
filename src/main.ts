@@ -9,22 +9,6 @@ import router from './router'
 import './assets/main.css'
 
 
-// HTTP connection to the API
-const httpLink = createHttpLink({
-  // You should use an absolute URL here
-  uri: 'https://optimus-pro-mini.herokuapp.com/graphql',
-})
-
-// Cache implementation
-const cache = new InMemoryCache()
-
-// Create the apollo client
-const apolloClient = new ApolloClient({
-  link: httpLink,
-  cache,
-})
-
-
 
 const app = createApp(App)
 
