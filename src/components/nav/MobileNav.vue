@@ -79,6 +79,7 @@
 </template>
 
 <script setup  lang="ts">
+import { reactive } from "vue";
 import { useModelStore } from '@/stores/model'
 
 const { updateModelState } = useModelStore()
@@ -87,7 +88,6 @@ defineProps({
   toggle: Function,
 });
 
-import { reactive } from "vue";
 // import links from '../static';
 const links = [
   {
