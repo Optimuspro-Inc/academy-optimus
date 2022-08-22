@@ -18,8 +18,8 @@
             <div class="lg:text-2xl text-xl text-[#0A1833] font-bold">
               Contact
             </div>
-            <div>M: +234(0)909.199.6571</div>
-            <div>E: sales.ng@optimus.com</div>
+            <div>M: +234(0)7087378593</div>
+            <div>E: optimusproacademy@gmail.com</div>
           </div>
           <div class="lg:w-1/2">
             <div class="my-3">

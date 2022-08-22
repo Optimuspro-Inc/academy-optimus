@@ -29,11 +29,12 @@ const  { open } = storeToRefs(useModelStore())
               lg:text-[55px] lg:mr-8
             "
           >
-            Get in-demand skills to grow your career in the web3 industry
+            Acquire in-demand skills 
+            to grow your career in
+            web3 industry. 
           </h2>
-          <p class="inter text-[16px] lg:text-[16px] pt-5">
-            Learn from industry experts, get internships, jobs and career
-            opptunities.
+          <p class="inter text-[16px] lg:w-[440px] lg:text-[16px] pt-5">
+            Learn from industry experts, enjoy direct mentorship benefits, get first-hand access to internship and career opportunities.
           </p>
           <p class="inter text-[16px] lg:text-[16px] pt-3">
             (Pay less for more. Get quality education and training)
@@ -85,8 +86,7 @@ const  { open } = storeToRefs(useModelStore())
         </div>
         <div class="lg:flex justify-between">
           <div class="lg:text-lg lg:w-1/2 my-auto text-[#0A1833]">
-            Optimus Pro Academy is your first-rate edu-platform for all blockchain and Web3 learning resources. 
-            Founded to bridge the talent gap for Africans within the blockchain ecosystem, 
+            Optimus Pro Academy is your first-rate edu-platform for all blockchain and Web3 learning resources. Founded to bridge the talent gap for Africans within the blockchain ecosystem, 
 
             <br /><br />
             the academy is charged with upskilling Africans with knowledge and in-demand expertise in blockchain and Web3 to enable them build, manage and promote innovative ideas to excel in the highly competitive and constantly evolving blockchain landscape.
@@ -113,7 +113,7 @@ const  { open } = storeToRefs(useModelStore())
             <img src="/images/mission.png" alt="" />
             <div class="heading text-2xl my-4">MISSION</div>
             <div class="lg:text-lg">
-              To empower 45M+ Africans with high-level professional skills in various blockchain and Web3 careers through tailored self-paced courses best suited for scholar’s need. Continuous mentorship program by industry experts for accountability and provision of certificates upon course completion for proof of industry expertise.
+              To empower 45M+ Africans with high-level professional skills in various blockchain and Web3 careers through tailored self-paced courses best suited for scholar’s need.
             </div>
           </div>
           <div
@@ -131,7 +131,7 @@ const  { open } = storeToRefs(useModelStore())
             <img src="/images/vision.png" alt="" />
             <div class="heading text-2xl my-4">VISION</div>
             <div class="lg:text-lg">
-              To highlight Africa’s relevance in blockchain revolution, bridging the continent to the global financial system and encouraging growth, economic and regional development through youth education.
+              To highlight Africa’s relevance in blockchain revolution, bridging the continent to the global financial system and encouraging growth, economic and regional development.
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ const  { open } = storeToRefs(useModelStore())
     <div class="bg-[#F4F7FF]">
       <div class="flex justify-around w-[300px] m-auto py-10">
         <a
-          href="https://www.facebook.com/OptimusPro/"
+          href="https://www.facebook.com/profile.php?id=100082993549468"
           target="_blank"
           rel="noopener noreferrer"
         >
