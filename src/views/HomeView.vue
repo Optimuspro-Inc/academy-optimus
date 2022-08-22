@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { useQuery } from '@vue/apollo-composable'
+import { useQuery, useMutation } from '@vue/apollo-composable'
 import gql from 'graphql-tag';
 import { reactive, watch } from 'vue'
-import axios from 'axios'
+import { useToast } from "vue-toastification";
+import checkEmail from '../utils/isEmail'
+// @ts-ignore
+import Newsletter from '../components/Newsletter.vue'
 
+const toast = useToast();
 
 const state = reactive({
   username: '',
@@ -15,21 +19,57 @@ defineProps({
   modal: Boolean,
 });
 
+const { result } = useQuery(gql`
+      query getUsers {
+        users {
+          username
+          email
+        }
+      }
+    `)
+  const { mutate: signUp, onDone, onError } = useMutation(gql`
+    mutation createUser($userInput: CreateUserInput) {
+        createUser(userInput: $userInput) {
+          _id
+          username
+          email
+        }
+      }
+  `,
+  () => ({
+      variables: {
+        "userInput": {
+        "email": state.email,
+        "username": state.username
+      }
+      },
+    })
+  )
+
+
+onDone(result => {
+  console.log(result.data)
+  toast.success(`${result.data.createUser.username} created!!!`);
+})
+onError(error => {
+  console.log(error)
+  toast.error(`${error}`);
+})
+
+
 const createAcc = async () => {
   console.log(state.username, state.email)
-  const { data } = await axios({
-			url: 'https://optimus-pro-mini.herokuapp.com/graphql',
-			method: 'POST',
-			data: {
-				query: ``
-        }
-      })
-      if (data.errors) {
-        const errorObj = data.errors[0]
-        return
-      }
-      if (!data.errors) {
-      }
+  const isEmail = checkEmail(state.email)
+  if (!isEmail) {
+    toast.error("Enter a valid email");
+    return
+  }
+  if (!state.username) {
+    toast.error("Enter Username");
+    return
+  }
+  
+  signUp()
 }
 </script>
 
@@ -154,37 +194,7 @@ const createAcc = async () => {
         </div>
       </div>
     </section>
-    <section>
-      <div class="mx-3 lg:my-32 my-16">
-        <div
-          class="
-            lg:mx-auto lg:w-3/4
-            bg-[#0A1833]
-            rounded-xl
-            text-center
-            lg:p-16
-            p-8
-          "
-        >
-          <div class="text-[#7EFCFC] lg:text-base text-sm">
-            SUBSCRIBE TO OUR NEWSLETTER
-          </div>
-          <div
-            class="lg:text-4xl text-3xl leading-tight my-6 heading text-white"
-          >
-            GET LATEST NEW AND UPDATES ON WEB3 COURSES AND CONTENT
-          </div>
-          <div class="lg:flex justify-between lg:w-1/2 mx-auto">
-            <input type="text" class="p-3 px-3 w-2/3" placeholder="Email Address" />
-            <button
-              class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36"
-            >
-              Get Started
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Newsletter />
     <section id="contact">
       <div class="lg:mx-20 mx-8">
         <div
