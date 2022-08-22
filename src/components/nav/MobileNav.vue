@@ -33,7 +33,7 @@
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
           </a>
           <button
-            @click="closeNav(), toggle()"
+            @click="closeNav(), updateModelState()"
             class="
               text-white
               border-[#162044] border-[1px] border-solid
@@ -79,6 +79,10 @@
 </template>
 
 <script setup  lang="ts">
+import { useModelStore } from '@/stores/model'
+
+const { updateModelState } = useModelStore()
+
 defineProps({
   toggle: Function,
 });

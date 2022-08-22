@@ -2,22 +2,19 @@
 import { ref } from "vue";
 
 import { RouterLink, RouterView } from "vue-router";
-// @ts-ignore 
 import Desktop from "./components/nav/Desktop.vue";
-// @ts-ignore 
 import MobileNav from "./components/nav/MobileNav.vue";
+import ModelAcct from "./components/ModelAcct.vue";
 
-const modal = ref(false);
-const toggle = () => {
-  modal.value = !modal.value;
-};
+
 </script>
 
 <template>
   <div class="app">
-    <Desktop :toggle="toggle" class="hidden lg:block" />
-    <MobileNav :toggle="toggle" class="block lg:hidden" />
-    <RouterView :toggle="toggle" :modal="modal" />
+    <ModelAcct />
+    <Desktop class="hidden lg:block" />  
+    <MobileNav class="block lg:hidden" />
+    <RouterView />
   </div>
 </template>
 

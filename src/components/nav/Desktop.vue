@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { RouterLink } from "vue-router";
+import { reactive } from "vue";
+import { useModelStore } from '@/stores/model'
+
+const { updateModelState } = useModelStore()
+
+const state = reactive({
+  show: false,
+})
+</script>
+
 <template>
   <div class="bg-white pt-8">
     <nav class="lg:mx-20">
@@ -33,7 +45,7 @@
           </ul>
           <!-- <button class="text-[#162044] border-[#162044] border-[1px] border-solid w-[140px] h-[45px] rounded-[53px]">Login</button> -->
           <button
-            @click="toggle"
+            @click="updateModelState"
             class="
               text-white
               border-[#162044] border-[1px] border-solid
@@ -73,18 +85,6 @@
     </nav>
   </div>
 </template>
-
-<script setup lang="ts">
-import { RouterLink } from "vue-router";
-import { reactive } from "vue";
-const state = reactive({
-  show: false,
-});
-
-defineProps({
-  toggle: Function,
-});
-</script>
 
 <style scoped>
 .v-enter-active,
