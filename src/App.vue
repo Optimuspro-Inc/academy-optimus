@@ -2,7 +2,9 @@
 import { ref } from "vue";
 
 import { RouterLink, RouterView } from "vue-router";
+// @ts-ignore 
 import Desktop from "./components/nav/Desktop.vue";
+// @ts-ignore 
 import MobileNav from "./components/nav/MobileNav.vue";
 
 const modal = ref(false);

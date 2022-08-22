@@ -99,7 +99,7 @@ const createAcc = async () => {
 
           <div class="py-5">
             <input
-              @click="toggle()"
+              @click="toggle?.()"
               class="
                 bg-[#162044]
                 rounded-[5px]
