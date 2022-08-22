@@ -8,69 +8,11 @@ import checkEmail from '../utils/isEmail'
 // @ts-ignore
 import Newsletter from '../components/Newsletter.vue'
 import { useModelStore } from '@/stores/model'
+// @ts-ignore
+import Contact from '../components/Contact.vue'
 
 const { updateModelState } = useModelStore()
 const  { open } = storeToRefs(useModelStore())
-
-const toast = useToast();
-
-const state = reactive({
-  username: '',
-  email: ''
-})
-
-const { result } = useQuery(gql`
-      query getUsers {
-        users {
-          username
-          email
-        }
-      }
-    `)
-  const { mutate: signUp, onDone, onError } = useMutation(gql`
-    mutation createUser($userInput: CreateUserInput) {
-        createUser(userInput: $userInput) {
-          _id
-          username
-          email
-        }
-      }
-  `,
-  () => ({
-      variables: {
-        "userInput": {
-        "email": state.email,
-        "username": state.username
-      }
-      },
-    })
-  )
-
-
-onDone(result => {
-  console.log(result.data)
-  toast.success(`${result.data.createUser.username} created!!!`);
-})
-onError(error => {
-  console.log(error)
-  toast.error(`${error}`);
-})
-
-
-const createAcc = async () => {
-  console.log(state.username, state.email)
-  const isEmail = checkEmail(state.email)
-  if (!isEmail) {
-    toast.error("Enter a valid email");
-    return
-  }
-  if (!state.username) {
-    toast.error("Enter Username");
-    return
-  }
-  
-  signUp()
-}
 </script>
 
 <template>
@@ -118,7 +60,7 @@ const createAcc = async () => {
 
         <div>
           <img
-            class="lg:absolute lg:right-0 lg:w-1/2"
+            class="md:w-[469px] m-auto lg:w-[669px]"
             src="/images/smile.png"
             alt=""
           />
@@ -196,55 +138,8 @@ const createAcc = async () => {
       </div>
     </section>
     <Newsletter />
-    <section id="contact">
-      <div class="lg:mx-20 mx-8">
-        <div
-          class="
-            heading
-            lg:text-6xl
-            font-bold
-            text-3xl text-[#162044] text-center
-            capitalize
-          "
-        >
-          contact us
-        </div>
-        <div class="lg:flex justify-between my-8">
-          <div class="bg-[#FAFAFA] p-4 lg:w-96">
-            <div class="lg:text-2xl text-xl text-[#0A1833] font-bold">
-              Contact
-            </div>
-            <div>M: +234(0)909.199.6571</div>
-            <div>E: sales.ng@optimus.com</div>
-          </div>
-          <div class="lg:w-1/2">
-            <div class="my-3">
-              <input
-                type="text"
-                class="p-3 border border-gray-300 w-full bg-[#FAFAFA]"
-                placeholder="Email Address"
-              />
-            </div>
-            <div class="my-3">
-              <input
-                type="text"
-                class="p-3 border border-gray-300 w-full bg-[#FAFAFA]"
-                placeholder="Subject"
-              />
-            </div>
-            <div class="my-3">
-              <textarea
-                class="w-full h-32 border border-gray-300 p-3 bg-[#FAFAFA]"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <div class="mt-6 text-center">
-              <button class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    <Contact />
 
     
   </main>
@@ -295,7 +190,7 @@ const createAcc = async () => {
       <div class="lg:mx-20">
         <div class="py-10">
           <p class="text-white inter text-[16px] text-center">
-            Copyright © 2022 all rights reserved Optimus Pro
+            Copyright © {{ new Date().getFullYear() }} all rights reserved Optimus Pro
           </p>
         </div>
       </div>
