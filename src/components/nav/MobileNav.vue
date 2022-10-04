@@ -29,7 +29,7 @@
             <div @click="closeNav" class="link lg:my-0 my-4">About</div>
           </a>
           <a href="#cohorts">
-            <div @click="closeNav" class="link lg:my-0 my-4">Cohorts</div>
+            <div @click="closeNav" class="link lg:my-0 my-4">Program</div>
           </a>
           <a href="#contact">
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
