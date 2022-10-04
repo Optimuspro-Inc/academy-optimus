@@ -1,4 +1,3 @@
-
 <template>
   <div class="content h-[60px] w-full bg-white">
     <div class="container pt-4 flex justify-between">
@@ -29,20 +28,15 @@
           <a href="#about">
             <div @click="closeNav" class="link lg:my-0 my-4">About</div>
           </a>
+          <a href="#cohorts">
+            <div @click="closeNav" class="link lg:my-0 my-4">Cohorts</div>
+          </a>
           <a href="#contact">
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
           </a>
           <button
             @click="closeNav(), updateModelState()"
-            class="
-              text-white
-              border-[#162044] border-[1px] border-solid
-              h-[45px]
-              rounded-[53px]
-              px-10
-              my-3
-              bg-[#162044]
-            "
+            class="text-white border-[#162044] border-[1px] border-solid h-[45px] rounded-[53px] px-10 my-3 bg-[#162044]"
           >
             Creeate Account
           </button>
@@ -78,11 +72,11 @@
   </div>
 </template>
 
-<script setup  lang="ts">
+<script setup lang="ts">
 import { reactive } from "vue";
-import { useModelStore } from '@/stores/model'
+import { useModelStore } from "@/stores/model";
 
-const { updateModelState } = useModelStore()
+const { updateModelState } = useModelStore();
 
 defineProps({
   toggle: Function,
@@ -107,8 +101,6 @@ const links = [
     link: "/",
   },
 ];
-
-
 
 const state = reactive({
   open: false,

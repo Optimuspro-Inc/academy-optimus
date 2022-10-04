@@ -1,51 +1,41 @@
 <template>
+  <!-- Form Bar-->
+  <div class="bg-[#0A1833] text-center p-3">
+    <div class="text-[#7EFCFC] lg:text-base text-sm">
+      Help us build something better 🤝
+      <span class="underline ml-1 text-white">
+        <a
+          href="https://docs.google.com/forms/d/18GuJOMbac4z9dcLFKUqafC3WNOFZ897AwqulhNhdYHo/edit"
+          target="_blank"
+          rel="noopener norefferer"
+          >here!</a
+        >
+      </span>
+    </div>
+  </div>
+  <!-- Form Bar-->
   <div>
-     <div
+    <div
       v-if="open"
       class="h-full w-full bg-black fixed top-0 opacity-50"
     ></div>
-   <div
+    <div
       v-if="open"
       id="defaultModal"
       tabindex="-1"
-      class="
-        overflow-y-auto overflow-x-hidden
-        fixed
-        top-0
-        right-0
-        left-0
-        z-50
-        w-full
-        md:inset-0 md:h-full
-        justify-center
-        items-center
-        flex
-      "
+      class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 md:h-full justify-center items-center flex"
       aria-modal="true"
       role="dialog"
     >
       <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
         <!-- Modal content -->
-        <div
-          class="relative bg-white rounded-lg shadow h-[420px]"
-        >
+        <div class="relative bg-white rounded-lg shadow h-[420px]">
           <!-- Modal header -->
           <div class="flex justify-between items-start p-4 rounded-t">
             <button
               @click="updateModelState"
               type="button"
-              class="
-                text-gray-400
-                bg-transparent
-                hover:bg-gray-200 hover:text-gray-900
-                rounded-lg
-                text-sm
-                p-1.5
-                ml-auto
-                inline-flex
-                items-center
-                dark:hover:bg-gray-600 dark:hover:text-white
-              "
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
               data-modal-toggle="defaultModal"
             >
               <svg
@@ -97,7 +87,10 @@
             </div>
 
             <div class="my-8 text-center">
-              <button @click="createAcc" class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]">
+              <button
+                @click="createAcc"
+                class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]"
+              >
                 Get Started
               </button>
             </div>
@@ -109,81 +102,80 @@
 </template>
 
 <script setup lang="ts">
-import { useQuery, useMutation } from '@vue/apollo-composable'
-import gql from 'graphql-tag';
-import { reactive } from 'vue'
+import { useQuery, useMutation } from "@vue/apollo-composable";
+import gql from "graphql-tag";
+import { reactive } from "vue";
 import { useToast } from "vue-toastification";
-import checkEmail from '@/utils/isEmail'
-import { storeToRefs } from 'pinia'
-import { useModelStore } from '@/stores/model'
-
+import checkEmail from "@/utils/isEmail";
+import { storeToRefs } from "pinia";
+import { useModelStore } from "@/stores/model";
 
 // const toast = useToast();
-const  { open } = storeToRefs(useModelStore())
-const { updateModelState } = useModelStore()
+const { open } = storeToRefs(useModelStore());
+const { updateModelState } = useModelStore();
 
 const toast = useToast();
 
 const state = reactive({
-  username: '',
-  email: ''
-})
+  username: "",
+  email: "",
+});
 
 const { result } = useQuery(gql`
-      query getUsers {
-        users {
-          username
-          email
-        }
-      }
-    `)
-  const { mutate: signUp, onDone, onError } = useMutation(gql`
+  query getUsers {
+    users {
+      username
+      email
+    }
+  }
+`);
+const {
+  mutate: signUp,
+  onDone,
+  onError,
+} = useMutation(
+  gql`
     mutation createUser($userInput: CreateUserInput) {
-        createUser(userInput: $userInput) {
-          _id
-          username
-          email
-        }
+      createUser(userInput: $userInput) {
+        _id
+        username
+        email
       }
+    }
   `,
   () => ({
-      variables: {
-        "userInput": {
-        "email": state.email,
-        "username": state.username
-      }
+    variables: {
+      userInput: {
+        email: state.email,
+        username: state.username,
       },
-    })
-  )
+    },
+  })
+);
 
-
-onDone(result => {
-  console.log(result.data)
+onDone((result) => {
+  console.log(result.data);
   toast.success(`${result.data.createUser.username} created!!!`);
-})
-onError(error => {
-  console.log(error)
+});
+onError((error) => {
+  console.log(error);
   toast.error(`${error}`);
-})
-
+});
 
 const createAcc = async () => {
-  console.log(state.username, state.email)
-  const isEmail = checkEmail(state.email)
+  console.log(state.username, state.email);
+  const isEmail = checkEmail(state.email);
   if (!isEmail) {
     toast.error("Enter a valid email");
-    return
+    return;
   }
   if (!state.username) {
     toast.error("Enter Username");
-    return
+    return;
   }
-  
-  signUp()
-}
 
+  signUp();
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
