@@ -100,29 +100,152 @@ const { open } = storeToRefs(useModelStore());
       </div>
     </section>
     <section id="cohorts">
-      <div class="lg:mx-auto bg-[#0A1833] text-center lg:p-16 p-8 my-10">
-        <div class="text-[#7EFCFC] lg:text-4xl text-3xl">
-          Register For Our Upcoming Cohorts
+      <div class="lg:mx-20 mx-8">
+        <div class="lg:mx-auto bg-[#0A1833] text-center lg:p-16 p-8 my-10">
+          <div class="text-[#7EFCFC] lg:text-4xl text-3xl">
+            Join Our Upcoming Training Programs
+          </div>
+          <div class="lg:flex justify-between w-[100%] m-auto py-10">
+            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+              <div
+                class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
+              >
+                FINANCIAL ANALYSIS
+              </div>
+              <div class="flex justify-around w-[80px] m-auto py-5">
+                <img
+                  class="w-[70]"
+                  src="/images/market-analysis.png"
+                  alt="Solididty Cohort"
+                />
+              </div>
+              <button
+                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+              >
+                Apply
+              </button>
+            </div>
+            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+              <div
+                class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
+              >
+                BLOCKCHAIN PROGRAMMING
+              </div>
+              <div class="flex justify-around w-[80px] m-auto py-5">
+                <img
+                  class="w-[70]"
+                  src="/images/ethereum.webp"
+                  alt="Solididty Cohort"
+                />
+              </div>
+              <button
+                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+              >
+                Apply
+              </button>
+            </div>
+            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+              <div
+                class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
+              >
+                DIGITAL ARTS AND PRODUCT DESIGN
+              </div>
+              <div class="flex justify-around w-[80px] m-auto py-5">
+                <img
+                  class="w-[70]"
+                  src="/images/product-design.webp"
+                  alt="Solididty Cohort"
+                />
+              </div>
+              <button
+                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+              >
+                Apply
+              </button>
+            </div>
+            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+              <div
+                class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
+              >
+                MARKETING AND MANAGEMENT
+              </div>
+              <div class="flex justify-around w-[80px] m-auto py-5">
+                <img
+                  class="w-[70]"
+                  src="/images/bullhorn.webp"
+                  alt="Solididty Cohort"
+                />
+              </div>
+              <button
+                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="bg-white lg:mx-auto lg:w-1/4 rounded-xl text-center">
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="lg:mx-20 mx-8">
+        <div class="lg:mx-auto text-[#162044] text-center lg:p-16 p-8 my-10">
           <div
-            class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
+            class="heading lg:text-5xl text-3xl lg:my-0 my-8 font-bold text-center text-[#162044]"
           >
-            SOLIDITY DEVELOPER TRANNING
+            Meet The Team
           </div>
-          <div class="flex justify-around w-[200px] m-auto py-10">
-            <img
-              class="w-[100]"
-              src="/images/solidity-icon.webp"
-              alt="Solididty Cohort"
-            />
+          <div class="lg:flex justify-between w-[80%] m-auto py-10">
+            <div class="lg:w-1/6 lg:mx-auto">
+              <div class="lg:mx-auto lg:w-1/5 rounded-xl text-center">
+                <div class="flex justify-around w-[80px] m-auto py-5">
+                  <img
+                    class="w-[70] rounded-full"
+                    src="/images/bullhorn.webp"
+                    alt="Solididty Cohort"
+                  />
+                </div>
+                <div class="lg:text-lg my-1 text-[#162044]">Bolande Akubo</div>
+              </div>
+            </div>
+            <div class="lg:w-1/6 lg:mx-auto">
+              <div class="lg:mx-auto lg:w-1/5 rounded-xl text-center">
+                <div class="flex justify-around w-[80px] m-auto py-5">
+                  <img
+                    class="w-[70] rounded-full"
+                    src="/images/bullhorn.webp"
+                    alt="Solididty Cohort"
+                  />
+                </div>
+                <div class="lg:text-lg my-1 text-[#162044]">Bolande Akubo</div>
+              </div>
+            </div>
+            <div class="lg:w-1/6 lg:mx-auto">
+              <div class="lg:mx-auto lg:w-1/5 rounded-xl text-center">
+                <div class="flex justify-around w-[80px] m-auto py-5">
+                  <img
+                    class="w-[70] rounded-full"
+                    src="/images/bullhorn.webp"
+                    alt="Solididty Cohort"
+                  />
+                </div>
+                <div class="lg:text-lg my-1 text-[#162044]">Bolande Akubo</div>
+              </div>
+            </div>
+            <div class="lg:w-1/6 lg:mx-auto">
+              <div class="lg:mx-auto lg:w-1/5 rounded-xl text-center">
+                <div class="flex justify-around w-[80px] m-auto py-5">
+                  <img
+                    class="w-[70] rounded-full"
+                    src="/images/bullhorn.webp"
+                    alt="Solididty Cohort"
+                  />
+                </div>
+                <div class="lg:text-lg my-1 text-[#162044]">Bolande Akubo</div>
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
-        >
-          Apply
-        </button>
       </div>
     </section>
     <Newsletter />

@@ -31,6 +31,9 @@
           <a href="#cohorts">
             <div @click="closeNav" class="link lg:my-0 my-4">Program</div>
           </a>
+          <a href="#team">
+            <div @click="closeNav" class="link lg:my-0 my-4">Team</div>
+          </a>
           <a href="#contact">
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
           </a>
