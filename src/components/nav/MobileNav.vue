@@ -38,7 +38,7 @@
             @click="closeNav(), updateModelState()"
             class="text-white border-[#162044] border-[1px] border-solid h-[45px] rounded-[53px] px-10 my-3 bg-[#162044]"
           >
-            Creeate Account
+            Create Account
           </button>
           <!-- <router-link  to="/" @click="closeNav">
             <div class="link lg:my-0 my-4">For Business</div>
