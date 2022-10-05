@@ -77,7 +77,7 @@ const { open } = storeToRefs(useModelStore());
           <div
             class="card lg:mb-0 mb-12 lg:px-8 px-4 lg:py-10 py-8 lg:w-1/2 lg:mr-5 rounded-md text-[#0A1833]"
           >
-            <img class="w-[60px]" src="/images/terminals.webp" alt="" />
+            <img class="w-[110px]" src="/images/_mission.jpg" alt="" />
             <div class="heading text-2xl my-4">MISSION</div>
             <div class="lg:text-lg">
               To empower 85M+ Africans with high-level professional skills in
@@ -88,7 +88,7 @@ const { open } = storeToRefs(useModelStore());
           <div
             class="card lg:px-8 px-4 lg:py-10 py-8 lg:w-1/2 lg:ml-5 rounded-md text-[#0A1833]"
           >
-            <img src="/images/rocket2.webp" alt="" class="w-[60px]" />
+            <img src="/images/_vision.jpg" alt="" class="w-[100px]" />
             <div class="heading text-2xl my-4">VISION</div>
             <div class="lg:text-lg">
               To highlight Africa’s relevance in the blockchain revolution,
