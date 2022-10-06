@@ -247,20 +247,21 @@ const { open } = storeToRefs(useModelStore());
                 <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
                   <img
                     class="w-[70] rounded-full"
-                    src="/images/Great_Adams_.jpg"
+                    src="/images/Michael_Jin.png"
                     alt="Solididty Cohort"
                   />
                 </div>
               </div>
-              <div class="lg:text-2xl mt-1 text-[#162044]">Great Adams</div>
+              <div class="lg:text-2xl mt-1 text-[#162044]">Michael Jin</div>
               <div class="lg:text-base text-[#162044]">
                 Full Stack Blockchain Developer
               </div>
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Senior Web3 developer and facilitator. Built SaaS products, web
-                apps, DApps, and API(s) for clients. Full stack web developer.
+                Former Senior Developer at Webpuppies Digitals. Specialize in
+                creating user-friendly, responsive designs. Developed 36 web
+                applications, including web3.0 with over 100,000 downloads.
               </div>
             </div>
 
@@ -269,20 +270,22 @@ const { open } = storeToRefs(useModelStore());
                 <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
                   <img
                     class="w-[70] rounded-full"
-                    src="/images/bullhorn.webp"
+                    src="/images/Chukwu_Ebube.jpg"
                     alt="Solididty Cohort"
                   />
                 </div>
               </div>
-              <div class="lg:text-2xl mt-1 text-[#162044]">Bolande Akubo</div>
+              <div class="lg:text-2xl mt-1 text-[#162044]">
+                Chukwu Ebube Peter
+              </div>
               <div class="text-[#162044] lg:text-base">
-                Full Stack Blockchain Developer
+                Head of Digital Arts & Designs
               </div>
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Founder of Optimus Pro. Crypto trader, Instructor, Web 3.0 and
-                blockchain enthusiast.
+                Community and Social Media Manager, Community Moderator. Digital
+                & Abstract Artist And Mentor.
               </div>
             </div>
           </div>
