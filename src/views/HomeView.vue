@@ -259,9 +259,9 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Former Senior Developer at Webpuppies Digitals. Specialize in
-                creating user-friendly, responsive designs. Developed 36 web
-                applications, including web3.0 with over 100,000 downloads.
+                Former Senior Developer. A Facilitator on Blockchain
+                Development, Specializes in Creating User-friendly, Responsive
+                Designs and dApps.
               </div>
             </div>
 
