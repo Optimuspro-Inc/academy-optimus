@@ -112,15 +112,15 @@ const { open } = storeToRefs(useModelStore());
               >
                 FINANCIAL ANALYSIS
               </div>
-              <div class="flex justify-around w-[80px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-5">
                 <img
                   class="w-[70]"
-                  src="/images/market-analysis.png"
+                  src="/images/fin_a.jpg"
                   alt="Solididty Cohort"
                 />
               </div>
               <button
-                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
               >
                 Apply
               </button>
@@ -131,15 +131,15 @@ const { open } = storeToRefs(useModelStore());
               >
                 BLOCKCHAIN PROGRAMMING
               </div>
-              <div class="flex justify-around w-[80px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-5">
                 <img
                   class="w-[70]"
-                  src="/images/ethereum.webp"
+                  src="/images/on_chain.jpg"
                   alt="Solididty Cohort"
                 />
               </div>
               <button
-                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
               >
                 Apply
               </button>
@@ -148,17 +148,17 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
-                DIGITAL ARTS AND PRODUCT DESIGN
+                DIGITAL ARTS & PRODUCT DESIGN
               </div>
-              <div class="flex justify-around w-[80px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-5">
                 <img
                   class="w-[70]"
-                  src="/images/product-design.webp"
+                  src="/images/digital_artist.jpg"
                   alt="Solididty Cohort"
                 />
               </div>
               <button
-                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
               >
                 Apply
               </button>
@@ -167,17 +167,17 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
-                MARKETING AND MANAGEMENT
+                MARKETING & MANAGEMENT
               </div>
-              <div class="flex justify-around w-[80px] m-auto py-5">
+              <div class="flex justify-around w-[225px] m-auto py-5">
                 <img
                   class="w-[70]"
-                  src="/images/bullhorn.webp"
+                  src="/images/market.jpg"
                   alt="Solididty Cohort"
                 />
               </div>
               <button
-                class="text-[#0A1833] p-3 px-3 bg-[#7EFCFC] lg:m-0 m-2 lg:w-36 py-3"
+                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
               >
                 Apply
               </button>
