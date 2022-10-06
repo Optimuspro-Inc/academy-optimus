@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
 import { reactive } from "vue";
-import { useModelStore } from '@/stores/model'
+import { useModelStore } from "@/stores/model";
 
-const { updateModelState } = useModelStore()
+const { updateModelState } = useModelStore();
 
 const state = reactive({
   show: false,
-})
+});
 </script>
 
 <template>
@@ -40,20 +40,19 @@ const state = reactive({
               <a href="#about">About</a>
             </li>
             <li class="inter text-sm pl-8">
+              <a href="#cohorts">Program</a>
+            </li>
+            <li class="inter text-sm pl-8">
+              <a href="#team">Team</a>
+            </li>
+            <li class="inter text-sm pl-8">
               <a href="#contact">Contact</a>
             </li>
           </ul>
           <!-- <button class="text-[#162044] border-[#162044] border-[1px] border-solid w-[140px] h-[45px] rounded-[53px]">Login</button> -->
           <button
             @click="updateModelState"
-            class="
-              text-white
-              border-[#162044] border-[1px] border-solid
-              w-[200px]
-              h-[45px]
-              rounded-[53px]
-              bg-[#162044]
-            "
+            class="text-white border-[#162044] border-[1px] border-solid w-[200px] h-[45px] rounded-[53px] bg-[#162044]"
           >
             Create Account
           </button>
