@@ -238,7 +238,7 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Crypto enthusiast, Market researcher, project manager content
+                Crypto enthusiast, Market researcher, project manager, content
                 writer and community moderator.
               </div>
             </div>
@@ -253,7 +253,7 @@ const { open } = storeToRefs(useModelStore());
                 </div>
               </div>
               <div class="lg:text-2xl mt-1 text-[#162044]">Michael Jin</div>
-              <div class="lg:text-base text-[#162044]">
+              <div class="text-[#162044] lg:text-base">
                 Full Stack Blockchain Developer
               </div>
               <div
@@ -284,7 +284,7 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Community and Social Media Manager, Community Moderator. Digital
+                Community and Social Media Manager. Community Moderator. Digital
                 & Abstract Artist And Mentor.
               </div>
             </div>
