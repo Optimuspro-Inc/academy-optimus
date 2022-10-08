@@ -195,7 +195,7 @@ const { open } = storeToRefs(useModelStore());
           >
             Meet The Team
           </div>
-          <div class="lg:flex justify-between w-[80%] m-auto py-10">
+          <div class="lg:flex justify-between w-[90%] m-auto py-10">
             <div class="lg:w-1/5 lg:mx-auto border-4 border-[#162044]">
               <div class="lg:mx-auto lg:w-1/2 rounded-xl text-center">
                 <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
@@ -259,9 +259,8 @@ const { open } = storeToRefs(useModelStore());
               <div
                 class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
               >
-                Former Senior Developer. A Facilitator on Blockchain
-                Development, Specializes in Creating User-friendly, Responsive
-                Designs and dApps.
+                Former Senior Developer. Specializes in Creating dApps, also
+                User-friendly and Responsive Designs.
               </div>
             </div>
 
