@@ -119,11 +119,13 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <button
-                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+              <a href="https://forms.gle/QKfvLmhRCEFiuSHe7" target="_blank">
+                <button
+                  class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+                >
+                  Apply
+                </button></a
               >
-                Apply
-              </button>
             </div>
             <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
               <div
@@ -138,17 +140,19 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <button
-                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+              <a href="" target="_blank">
+                <button
+                  class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+                >
+                  Apply
+                </button></a
               >
-                Apply
-              </button>
             </div>
             <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
-                DIGITAL ARTS & PRODUCT DESIGN
+                DIGITAL ARTS & DESIGN
               </div>
               <div class="flex justify-around w-[150px] m-auto py-5">
                 <img
@@ -157,11 +161,13 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <button
-                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+              <a href="" target="_blank">
+                <button
+                  class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+                >
+                  Apply
+                </button></a
               >
-                Apply
-              </button>
             </div>
             <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
               <div
@@ -176,11 +182,13 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <button
-                class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+              <a href="" target="_blank">
+                <button
+                  class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
+                >
+                  Apply
+                </button></a
               >
-                Apply
-              </button>
             </div>
           </div>
         </div>
