@@ -23,7 +23,7 @@ const { open } = storeToRefs(useModelStore());
           <h2
             class="text-[#162044] font-black text-[30px] leading-tight lg:text-[55px] lg:mr-8"
           >
-            Acquire in-demand skills to grow your career in the web3 industry.
+            Acquire in-demand skills to grow your career in the web3 industry
           </h2>
           <p class="inter text-[16px] lg:w-[440px] lg:text-[16px] pt-5">
             Learn from industry experts, enjoy direct mentorship benefits, get
@@ -140,7 +140,10 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <a href="" target="_blank">
+              <a
+                href="https://docs.google.com/forms/d/1QIgYht4YPlXsDzjpAgoZf4Dwv5hq9heCbrK0qi8glMo/edit"
+                target="_blank"
+              >
                 <button
                   class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
                 >
@@ -161,7 +164,10 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <a href="" target="_blank">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSet-Ir3QhP_ROXChtoHnD-hHth3JconkZ2zfE9uRZOusOiC6w/viewform"
+                target="_blank"
+              >
                 <button
                   class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
                 >
@@ -182,7 +188,7 @@ const { open } = storeToRefs(useModelStore());
                   alt="Solididty Cohort"
                 />
               </div>
-              <a href="" target="_blank">
+              <a href="https://forms.gle/Pw5zwL4FdPhXCEZT7" target="_blank">
                 <button
                   class="text-white border-[#162044] p-3 px-3 bg-[#162044] lg:m-0 m-2 lg:w-36 py-3"
                 >
