@@ -141,7 +141,7 @@ const { open } = storeToRefs(useModelStore());
                 />
               </div>
               <a
-                href="https://docs.google.com/forms/d/1QIgYht4YPlXsDzjpAgoZf4Dwv5hq9heCbrK0qi8glMo/edit"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeyJ6TksHjvteuJSq-4RytLn4YgW7ozsZedmKV_heybS7uHBg/viewform?usp=sf_link"
                 target="_blank"
               >
                 <button

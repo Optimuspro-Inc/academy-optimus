@@ -40,7 +40,7 @@ const state = reactive({
               <a href="#about">About</a>
             </li>
             <li class="inter text-sm pl-8">
-              <a href="#cohorts">Program</a>
+              <a href="#cohorts">Programs</a>
             </li>
             <li class="inter text-sm pl-8">
               <a href="#team">Team</a>
