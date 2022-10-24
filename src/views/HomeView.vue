@@ -23,11 +23,11 @@ const { open } = storeToRefs(useModelStore());
           <h2
             class="text-[#162044] font-black text-[30px] leading-tight lg:text-[55px] lg:mr-8"
           >
-            Acquire in-demand skills to grow your career in the web3 industry
+            Acquire in-demand skills to grow your career in web3
           </h2>
           <p class="inter text-[16px] lg:w-[440px] lg:text-[16px] pt-5">
-            Learn from experts, enjoy direct mentorship benefits, get first-hand
-            access to internship and career opportunities.
+            Learn from industry experts, enjoy direct mentorship benefits, get
+            first-hand access to internship and career opportunities.
           </p>
 
           <div class="py-5">
