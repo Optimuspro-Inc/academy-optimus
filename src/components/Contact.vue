@@ -35,7 +35,7 @@
             <div class="mt-6 text-center">
               <button
                 @click="sendMail()"
-                class="p-3 bg-[#7EFCFC] w-40 text-[#0A1833]"
+                class="p-3 bg-[#0A1833] w-40 text-[#FAFAFA]"
               >
                 Send
               </button>

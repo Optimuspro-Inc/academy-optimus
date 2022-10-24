@@ -26,8 +26,8 @@ const { open } = storeToRefs(useModelStore());
             Acquire in-demand skills to grow your career in the web3 industry
           </h2>
           <p class="inter text-[16px] lg:w-[440px] lg:text-[16px] pt-5">
-            Learn from industry experts, enjoy direct mentorship benefits, get
-            first-hand access to internship and career opportunities.
+            Learn from experts, enjoy direct mentorship benefits, get first-hand
+            access to internship and career opportunities.
           </p>
 
           <div class="py-5">
