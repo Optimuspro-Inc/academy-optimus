@@ -23,7 +23,7 @@ const { open } = storeToRefs(useModelStore());
           <h2
             class="text-[#162044] font-black text-[30px] leading-tight lg:text-[55px] lg:mr-8"
           >
-            Acquire in-demand skills to grow your career in the web3 industry
+            Acquire in-demand skills to grow your career in web3
           </h2>
           <p class="inter text-[16px] lg:w-[440px] lg:text-[16px] pt-5">
             Learn from industry experts, enjoy direct mentorship benefits, get
@@ -106,13 +106,13 @@ const { open } = storeToRefs(useModelStore());
             Join Our Upcoming Training Programs
           </div>
           <div class="lg:flex justify-between w-[100%] m-auto py-10">
-            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+            <div class="bg-white lg:mx-auto lg:w-1/5 rounded-xl text-center">
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
                 FINANCIAL ANALYSIS
               </div>
-              <div class="flex justify-around w-[150px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-3">
                 <img
                   class="w-[70]"
                   src="/images/fin_a.jpg"
@@ -127,13 +127,13 @@ const { open } = storeToRefs(useModelStore());
                 </button></a
               >
             </div>
-            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+            <div class="bg-white lg:mx-auto lg:w-1/5 rounded-xl text-center">
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
                 BLOCKCHAIN PROGRAMMING
               </div>
-              <div class="flex justify-around w-[150px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-3">
                 <img
                   class="w-[70]"
                   src="/images/on_chain.jpg"
@@ -151,13 +151,13 @@ const { open } = storeToRefs(useModelStore());
                 </button></a
               >
             </div>
-            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+            <div class="bg-white lg:mx-auto lg:w-1/5 rounded-xl text-center">
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
                 DIGITAL ARTS & DESIGN
               </div>
-              <div class="flex justify-around w-[150px] m-auto py-5">
+              <div class="flex justify-around w-[150px] m-auto py-3">
                 <img
                   class="w-[70]"
                   src="/images/digital_artist.jpg"
@@ -175,13 +175,13 @@ const { open } = storeToRefs(useModelStore());
                 </button></a
               >
             </div>
-            <div class="bg-white lg:mx-auto lg:w-1/6 rounded-xl text-center">
+            <div class="bg-white lg:mx-auto lg:w-1/5 rounded-xl text-center">
               <div
                 class="lg:text-base text-sm leading-tight my-6 heading text-[#0A1833]"
               >
                 MARKETING & MANAGEMENT
               </div>
-              <div class="flex justify-around w-[240px] m-auto py-5">
+              <div class="flex justify-around w-[214px] m-auto py-5">
                 <img
                   class="w-[70]"
                   src="/images/marketing_.jpg"
@@ -201,110 +201,6 @@ const { open } = storeToRefs(useModelStore());
       </div>
     </section>
 
-    <section id="team">
-      <div class="lg:mx-20 mx-8">
-        <div class="lg:mx-auto text-[#162044] text-center lg:p-16 p-8 my-10">
-          <div
-            class="heading lg:text-5xl text-3xl lg:my-0 my-8 font-bold text-center text-[#162044]"
-          >
-            Meet The Team
-          </div>
-          <div class="lg:flex justify-between w-[90%] m-auto py-10">
-            <div class="lg:w-1/5 lg:mx-auto border-4 border-[#162044]">
-              <div class="lg:mx-auto lg:w-1/2 rounded-xl text-center">
-                <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
-                  <img
-                    class="w-[70] rounded-full"
-                    src="/images/Henry_Otali.jpeg"
-                    alt="Solididty Cohort"
-                  />
-                </div>
-              </div>
-              <div class="lg:text-2xl text-[#162044] mt-1">
-                Henry Otali Nduka
-              </div>
-              <div class="lg:text-base text-[#162044]">
-                Business Development & Brand
-              </div>
-              <div
-                class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
-              >
-                Founder of Optimus Pro. Crypto trader, Instructor, Web 3.0 and
-                blockchain enthusiast.
-              </div>
-            </div>
-            <div class="lg:w-1/5 lg:mx-auto border-4 border-[#162044]">
-              <div class="lg:mx-auto lg:w-1/2 rounded-xl text-center">
-                <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
-                  <img
-                    class="w-[70] rounded-full"
-                    src="/images/Faith_Eberechi.jpg"
-                    alt="Solididty Cohort"
-                  />
-                </div>
-              </div>
-              <div class="lg:text-2xl mt-1 text-[#162044]">
-                Faith Eberechi Olowu
-              </div>
-              <div class="lg:text-base text-[#162044]">
-                Head of Administration
-              </div>
-              <div
-                class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
-              >
-                Crypto enthusiast, Market researcher, project manager, content
-                writer and community moderator.
-              </div>
-            </div>
-            <div class="lg:w-1/5 lg:mx-auto border-4 border-[#162044]">
-              <div class="lg:mx-auto lg:w-1/2 rounded-xl text-center">
-                <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
-                  <img
-                    class="w-[70] rounded-full"
-                    src="/images/Michael_Jin.png"
-                    alt="Solididty Cohort"
-                  />
-                </div>
-              </div>
-              <div class="lg:text-2xl mt-1 text-[#162044]">Michael Jin</div>
-              <div class="text-[#162044] lg:text-base">
-                Full Stack Blockchain Developer
-              </div>
-              <div
-                class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
-              >
-                Former Senior Developer. Specializes in Creating dApps, also
-                User-friendly and Responsive Designs.
-              </div>
-            </div>
-
-            <div class="lg:w-1/5 lg:mx-auto border-4 border-[#162044]">
-              <div class="lg:mx-auto lg:w-1/2 rounded-xl text-center">
-                <div class="flex justify-around w-[80px] m-auto pt-5 pb-2">
-                  <img
-                    class="w-[70] rounded-full"
-                    src="/images/Chukwu_Ebube.jpg"
-                    alt="Solididty Cohort"
-                  />
-                </div>
-              </div>
-              <div class="lg:text-2xl mt-1 text-[#162044]">
-                Chukwu Ebube Peter
-              </div>
-              <div class="text-[#162044] lg:text-base">
-                Head of Digital Arts & Designs
-              </div>
-              <div
-                class="lg:text-sm my-2 text-[#162044] lg:w-[100%] lg:mx-auto"
-              >
-                Community and Social Media Manager. Community Moderator. Digital
-                & Abstract Artist And Mentor.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <Newsletter />
 
     <Contact />
