@@ -37,10 +37,29 @@ const state = reactive({
         <div class="flex justify-between">
           <ul class="flex p-3 mr-6">
             <li class="inter text-sm pl-8">
-              <a href="#about">About</a>
+              <a href="/">Home</a>
             </li>
             <li class="inter text-sm pl-8">
-              <a href="#cohorts">Programs</a>
+              <a href="/#cohorts">Programs</a>
+            </li>
+            <li>
+              <div class="dropdown inter text-sm pl-8">
+                <button
+                  class="btn"
+                  style="border-left: 1px solid navy"
+                  onclick="window.location.href='/Resources';"
+                >
+                  Media
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Articles</a>
+                  <a href="#">Videos</a>
+                  <a href="#">Podcasts</a>
+                </div>
+              </div>
+            </li>
+            <li class="inter text-sm pl-8">
+              <a href="/#about">About</a>
             </li>
             <li class="inter text-sm pl-8">
               <a href="#contact">Contact</a>
