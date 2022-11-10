@@ -39,10 +39,22 @@
   outline: none;
 }
 
+.btnMobile {
+  background-color: white;
+  color: #0a1833;
+  //padding: 16px;
+  border: none;
+  outline: none;
+  font-size: 10px;
+}
+
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: absolute;
   display: inline-block;
+}
+
+.dropdownMobile {
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -72,8 +84,16 @@
   display: block;
 }
 
+.dropdownMobile:hover .dropdown-content {
+  display: block;
+}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .btn:hover,
 .dropdown:hover .btn {
+  background-color: #7efcfc;
+}
+
+.dropdownMobile:hover .btnMobile {
   background-color: #7efcfc;
 }

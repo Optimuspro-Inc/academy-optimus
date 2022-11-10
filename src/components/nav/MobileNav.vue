@@ -31,8 +31,15 @@
           <a href="/#cohorts">
             <div @click="closeNav" class="link lg:my-0 my-4">Programs</div>
           </a>
-          <a href="/Resources">
-            <div @click="closeNav" class="link lg:my-0 my-4">Media</div>
+          <a>
+            <div class="link lg:my-0 my-4 dropdownMobile">
+              Media
+              <div class="dropdown-content">
+                <a href="/Resources#Articles" @click="closeNav">Articles</a>
+                <a href="#" @click="closeNav">Videos</a>
+                <a href="#" @click="closeNav">Podcasts</a>
+              </div>
+            </div>
           </a>
           <a href="/#about">
             <div @click="closeNav" class="link lg:my-0 my-4">About</div>
