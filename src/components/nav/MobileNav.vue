@@ -33,11 +33,11 @@
           </a>
           <a>
             <div class="link lg:my-0 my-4 dropdownMobile">
-              Media
+              Resources
               <div class="dropdown-content">
                 <a href="/Resources#Articles" @click="closeNav">Articles</a>
-                <a href="#" @click="closeNav">Videos</a>
-                <a href="#" @click="closeNav">Podcasts</a>
+                <a href="/Resources#Articles" @click="closeNav">Podcasts</a>
+                <a href="/Resources#Videos" @click="closeNav">Videos</a>
               </div>
             </div>
           </a>
