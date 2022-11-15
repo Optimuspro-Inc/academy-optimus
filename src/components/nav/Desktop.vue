@@ -52,9 +52,9 @@ const state = reactive({
                   Resources
                 </button>
                 <div class="dropdown-content">
-                  <a href="/Resources#Articles">Articles</a>
-                  <a href="/Resources#Articles">Podcasts</a>
-                  <a href="/Resources#Videos">Videos</a>
+                  <a href="/#Articles">Articles</a>
+                  <a href="/#Articles">Podcasts</a>
+                  <a href="/#Videos">Videos</a>
                 </div>
               </div>
             </li>
