@@ -35,9 +35,9 @@
             <div class="link lg:my-0 my-4 dropdownMobile">
               Resources
               <div class="dropdown-content">
-                <a href="/#Articles" @click="closeNav">Articles</a>
-                <a href="/#Articles" @click="closeNav">Podcasts</a>
-                <a href="/#Videos" @click="closeNav">Videos</a>
+                <a href="/resources#Articles" @click="closeNav">Articles</a>
+                <a href="/resources#Articles" @click="closeNav">Podcasts</a>
+                <a href="/resources#Videos" @click="closeNav">Videos</a>
               </div>
             </div>
           </a>

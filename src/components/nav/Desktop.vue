@@ -47,14 +47,14 @@ const state = reactive({
                 <button
                   class="btn"
                   style="border-left: 1px solid navy"
-                  onclick="window.location.href='/Resources';"
+                  onclick="window.location.href='/resources';"
                 >
                   Resources
                 </button>
                 <div class="dropdown-content">
-                  <a href="/#Articles">Articles</a>
-                  <a href="/#Articles">Podcasts</a>
-                  <a href="/#Videos">Videos</a>
+                  <a href="/resources#Articles">Articles</a>
+                  <a href="/resources#Articles">Podcasts</a>
+                  <a href="/resources#Videos">Videos</a>
                 </div>
               </div>
             </li>
