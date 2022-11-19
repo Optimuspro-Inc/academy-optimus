@@ -25,12 +25,26 @@
         <div
           class="normal-case lg:text-8xl text-2xl lg:flex font-inter text-black"
         >
-          <a href="#about">
-            <div @click="closeNav" class="link lg:my-0 my-4">About</div>
+          <a href="/">
+            <div @click="closeNav" class="link lg:my-0 my-4">Home</div>
           </a>
-          <a href="#cohorts">
+          <a href="/#cohorts">
             <div @click="closeNav" class="link lg:my-0 my-4">Programs</div>
           </a>
+          <a>
+            <div class="link lg:my-0 my-4 dropdownMobile">
+              Resources
+              <div class="dropdown-content">
+                <a href="/resources#Articles" @click="closeNav">Articles</a>
+                <a href="/resources#Articles" @click="closeNav">Podcasts</a>
+                <a href="/resources#Videos" @click="closeNav">Videos</a>
+              </div>
+            </div>
+          </a>
+          <a href="/#about">
+            <div @click="closeNav" class="link lg:my-0 my-4">About</div>
+          </a>
+
           <a href="#contact">
             <div @click="closeNav" class="link lg:my-0 my-4">Contact</div>
           </a>

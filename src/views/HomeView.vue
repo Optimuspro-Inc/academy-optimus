@@ -200,11 +200,11 @@ const { open } = storeToRefs(useModelStore());
         </div>
       </div>
     </section>
-
-    <Newsletter />
-
-    <Contact />
   </main>
+
+  <Newsletter />
+
+  <Contact />
 
   <footer class="mt-20">
     <div class="bg-[#F4F7FF]">
