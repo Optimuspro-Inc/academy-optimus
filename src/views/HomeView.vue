@@ -101,7 +101,7 @@ const { open } = storeToRefs(useModelStore());
     </section>
     <section id="cohorts">
       <div class="lg:mx-20 mx-8">
-        <div class="lg:mx-auto bg-[#0A1833] text-center lg:p-16 p-8 my-10">
+        <div class="lg:mx-auto bg-[#0A1833] text-center lg:p-16 p-8 my-10 rounded-xl">
           <div class="text-[#7EFCFC] lg:text-4xl text-3xl">
             Join Our Upcoming Training Programs
           </div>

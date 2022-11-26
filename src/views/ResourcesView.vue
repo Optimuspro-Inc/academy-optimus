@@ -32,7 +32,7 @@ const { open } = storeToRefs(useModelStore());
       </div>
       <div class="lg:mx-20 mx-8 pb-20 text-[#162044]">
         <div class="lg:flex justify-between">
-          <div class="lg:w-1/4 lg:my-0 my-10">
+          <div class="lg:w-200 lg:my-0 my-10">
             <img
               class="border-4 border-[#162044]"
               src="/images/about.png"
@@ -47,95 +47,16 @@ const { open } = storeToRefs(useModelStore());
               </span>
             </div>
           </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <img
-              class="border-4 border-[#162044]"
-              src="/images/about.png"
-              alt=""
-            />
-            <div class="lg:text-lg">
-              Post Description........
-              <span class="underline ml-1 text-[#162044]">
-                <a href="" target="_blank" rel="noopener norefferer"
-                  >Read More!</a
-                >
-              </span>
-            </div>
-          </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <img
-              class="border-4 border-[#162044]"
-              src="/images/about.png"
-              alt=""
-            />
-            <div class="lg:text-lg">
-              Post Description........
-              <span class="underline ml-1 text-[#162044]">
-                <a href="" target="_blank" rel="noopener norefferer"
-                  >Read More!</a
-                >
-              </span>
-            </div>
+          
           </div>
         </div>
-      </div>
-
-      <div class="lg:mx-20 mx-8 pb-20 text-[#162044]">
-        <div class="lg:flex justify-between">
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <img
-              class="border-4 border-[#162044]"
-              src="/images/about.png"
-              alt=""
-            />
-            <div class="lg:text-lg">
-              Post Description........
-              <span class="underline ml-1 text-[#162044]">
-                <a href="" target="_blank" rel="noopener norefferer"
-                  >Read More!</a
-                >
-              </span>
-            </div>
-          </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <img
-              class="border-4 border-[#162044]"
-              src="/images/about.png"
-              alt=""
-            />
-            <div class="lg:text-lg">
-              Post Description........
-              <span class="underline ml-1 text-[#162044]">
-                <a href="" target="_blank" rel="noopener norefferer"
-                  >Read More!</a
-                >
-              </span>
-            </div>
-          </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <img
-              class="border-4 border-[#162044]"
-              src="/images/about.png"
-              alt=""
-            />
-            <div class="lg:text-lg">
-              Post Description........
-              <span class="underline ml-1 text-[#162044]">
-                <a href="" target="_blank" rel="noopener norefferer"
-                  >Read More!</a
-                >
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section
       id="Videos"
       class="bg-white lg:mt-10 text-center lg:text-left lg:h-[110vh]"
     >
-      <div class="lg:ml-20 mx-8 lg:flex pb-20">
+      <div class="lg:ml-20 mx-8 lg:flex pb-20 ">
         <div class="pt-10 lg:pt-24 lg:70%">
           <h2
             class="text-[#162044] font-black text-[30px] leading-tight lg:text-[55px] lg:mr-8"
@@ -144,35 +65,20 @@ const { open } = storeToRefs(useModelStore());
           </h2>
         </div>
       </div>
-      <div class="lg:mx-20 mx-8 pb-20 text-[#7efcfc] bg-[#162044]">
-        <div class="lg:flex justify-between">
-          <div class="lg:w-1/4 lg:my-0 my-10">
+      <div class="lg:mx-20 mx-8 pb-20 text-[#162044] ">
+        <div class="lg:flex">
+          <div class=" lg:my-0 my-10">
             <iframe
-              width="100%"
-              height="350"
+              width="650"
+              height="400"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             >
             </iframe>
-            <div class="lg:text-lg">Short Video Description........</div>
+            <a href="" target="_blank" rel="noopener norefferer"
+                  >Subscribe to our Youtube Channel</a
+                >
           </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <iframe
-              width="100%"
-              height="350"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="lg:text-lg">Short Video Description........</div>
-          </div>
-          <div class="lg:w-1/4 lg:my-0 my-10">
-            <iframe
-              width="100%"
-              height="350"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            >
-            </iframe>
-            <div class="lg:text-lg">Short Video Description........</div>
-          </div>
+    
         </div>
       </div>
     </section>
